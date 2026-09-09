@@ -1,0 +1,63 @@
+name: Nightly mini project
+
+on:
+  schedule:
+    - cron: '0 16 * * *' # 23:00 Asia/Jakarta
+  workflow_dispatch: # run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nightly
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      # ubuntu-latest already ships Node, Python, Go and a JDK, which covers
+      # every track in the playbook.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Build tonight's project
+        env:
+          # Set whichever you have. A subscription token comes from
+          # `claude setup-token`; an API key bills per run instead.
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Optional. A PAT with `repo` scope lets publish.sh create the
+          # standalone repository. Without it the project still lands here.
+          GH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ] && [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Set CLAUDE_CODE_OAUTH_TOKEN (or ANTHROPIC_API_KEY) in repository secrets."
+            exit 1
+          fi
+          claude -p "$(cat .github/agent-prompt.md)" \
+            --allowed-tools Bash Read Write Edit Glob Grep \
+            --output-format text \
+            | tee agent-report.txt
+
+      - name: Commit the result
+        run: |
+          rm -f agent-report.txt
+          if git diff --quiet && git diff --staged --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "Nothing was produced — today's slot was probably already filled."
+            exit 0
+          fi
+          git config user.name  "Singgih Rochmad Saputro"
+          git config user.email "singgih.rochmad@gmail.com"
+          git add -A
+          git commit -m "Add $(date -u +%F) project
+
+Built by the nightly agent. See the project README for what it does and how to run it."
+          git push

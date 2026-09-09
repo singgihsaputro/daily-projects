@@ -35,10 +35,16 @@ grocery list · shift planner · reading tracker · sleep log
 2. **It must run from a clean checkout** with the commands in the README, on a
    machine that has only the language toolchain installed.
 3. **No placeholder code.** No `TODO`, no stubbed function bodies, no lorem ipsum.
-4. **Verify what can be verified.** Backend and web: actually start it, hit it,
-   capture a real screenshot or terminal output. Android and iOS: the sandbox has
-   no emulator or Xcode, so ship a hand-drawn SVG **mockup** — label it
-   "UI mockup" and never call it a screenshot.
+4. **Verify what can be verified.**
+   - Backend and web: actually start it, hit it, capture a real screenshot or
+     terminal output.
+   - **Android: the runner has a JDK and the Android SDK — run
+     `./gradlew assembleDebug` and make it pass.** A project that does not
+     compile does not ship.
+   - iOS: the runner is Linux, so there is no Xcode and no build. Write clean,
+     complete source and say so in the README.
+   - Neither mobile track has an emulator, so ship a hand-drawn SVG **mockup**
+     for the preview — label it "UI mockup" and never call it a screenshot.
 5. **One project per night.** If today's slot already exists, stop.
 
 ## Every project ships

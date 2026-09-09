@@ -3,13 +3,18 @@
 #
 #   scripts/publish.sh projects/2026-09-10-android-reminder "One-line description"
 #
+# ...publishes to the repository "android-reminder".
+#
 # Degrades safely: if repo creation is not permitted (no gh auth, missing scope),
 # it says so and exits 0 — the project is already committed here, nothing is lost.
 set -euo pipefail
 
 dir=${1:?usage: publish.sh <project-dir> [description]}
 desc=${2:-"A small daily project"}
+# The archive folder keeps its date prefix (that is how the agent knows a slot
+# is already filled); the published repository does not need it.
 name=$(basename "$dir")
+name=${name#[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-}
 
 [ -d "$dir" ] || { echo "no such directory: $dir" >&2; exit 1; }
 

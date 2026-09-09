@@ -77,3 +77,15 @@ jobs:
             -m "Add $(date -u +%F) project" \
             -m "Built by the nightly agent. See the project README for what it does and how to run it."
           git push
+
+      # Idempotent: publish.sh skips any project that already has a repo, so
+      # this also picks up nights where publishing failed or was not configured.
+      - name: Publish projects that have no repo yet
+        env:
+          GH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+        run: |
+          for dir in projects/*/; do
+            [ -d "$dir" ] || continue
+            desc=$(grep -m1 -vE '^\s*$|^#|^!\[' "$dir/README.md" 2>/dev/null || true)
+            scripts/publish.sh "${dir%/}" "${desc:-A small daily project}"
+          done

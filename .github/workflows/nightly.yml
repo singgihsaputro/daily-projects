@@ -2,7 +2,9 @@ name: Nightly mini project
 
 on:
   schedule:
-    - cron: '0 16 * * *' # 23:00 Asia/Jakarta
+    # 23:13 Asia/Jakarta. Deliberately off the top of the hour — GitHub's
+    # scheduler is heavily contended at :00 and delays or drops those runs.
+    - cron: '13 16 * * *'
   workflow_dispatch: # run it by hand from the Actions tab
 
 permissions:

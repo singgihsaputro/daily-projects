@@ -1,0 +1,5 @@
+[
+  { "id": "classic", "label": "Classic Pomodoro", "focusMinutes": 25, "breakMinutes": 5 },
+  { "id": "short", "label": "Short Focus", "focusMinutes": 15, "breakMinutes": 3 },
+  { "id": "deep", "label": "Deep Work", "focusMinutes": 50, "breakMinutes": 10 }
+]

@@ -57,7 +57,7 @@ jobs:
           git config user.name  "Singgih Rochmad Saputro"
           git config user.email "singgih.rochmad@gmail.com"
           git add -A
-          git commit -m "Add $(date -u +%F) project
-
-Built by the nightly agent. See the project README for what it does and how to run it."
+          git commit \
+            -m "Add $(date -u +%F) project" \
+            -m "Built by the nightly agent. See the project README for what it does and how to run it."
           git push

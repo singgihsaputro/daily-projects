@@ -38,14 +38,30 @@ jobs:
           # standalone repository. Without it the project still lands here.
           GH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         run: |
+          set -o pipefail
+
+          # Copy-paste wraps long tokens. Strip any whitespace the secret picked
+          # up, or the auth header is rejected for containing a line break.
+          CLAUDE_CODE_OAUTH_TOKEN=$(printf '%s' "$CLAUDE_CODE_OAUTH_TOKEN" | tr -d '[:space:]')
+          ANTHROPIC_API_KEY=$(printf '%s' "$ANTHROPIC_API_KEY" | tr -d '[:space:]')
+          export CLAUDE_CODE_OAUTH_TOKEN ANTHROPIC_API_KEY
+
           if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ] && [ -z "$ANTHROPIC_API_KEY" ]; then
             echo "::error::Set CLAUDE_CODE_OAUTH_TOKEN (or ANTHROPIC_API_KEY) in repository secrets."
             exit 1
           fi
+
           claude -p "$(cat .github/agent-prompt.md)" \
             --allowed-tools Bash Read Write Edit Glob Grep \
             --output-format text \
             | tee agent-report.txt
+
+          # Claude exits 0 on an auth rejection, so the pipeline status is not
+          # enough to catch a bad token.
+          if grep -qiE "invalid auth token|invalid authorization header|authentication_error" agent-report.txt; then
+            echo "::error::Claude could not authenticate — check the CLAUDE_CODE_OAUTH_TOKEN secret."
+            exit 1
+          fi
 
       - name: Commit the result
         run: |

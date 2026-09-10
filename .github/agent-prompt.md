@@ -5,7 +5,8 @@ Build tonight's mini project in this repository.
 
 2. Work out today's slot:
    - `today=$(date -u +%F)`, `doy=$((10#$(date -u +%j)))`
-   - track = `doy % 4` → 0 Android, 1 iOS, 2 Backend, 3 Web
+   - track = `doy % 4` → 0 Android, 1 iOS, 2 Web, 3 Backend
+     (so the cycle reads Android → iOS → Web → Backend, one platform per day)
    - If any directory in `projects/` already starts with today's date, stop and
      do nothing at all.
 

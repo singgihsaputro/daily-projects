@@ -7,12 +7,19 @@ the routine reads it fresh every run, so changes take effect the next night.
 
 Deterministic, from the day of the year (`date +%j`):
 
+**One platform per day. Never two.** The cycle runs
+Android → iOS → Web → Backend, then back to Android.
+
 | `%j mod 4` | Track | Stack |
 |---|---|---|
 | 0 | **Android** | Kotlin, Jetpack Compose, Material 3, ViewModel + StateFlow, Gradle KTS |
 | 1 | **iOS** | Swift 6, SwiftUI, `@Observable`, Swift Package Manager |
-| 2 | **Backend** | rotate: Go (net/http), TypeScript (Hono), Python (FastAPI), Rust (Axum) |
-| 3 | **Web** | rotate: React 19 + Vite + Tailwind v4, SvelteKit 5, Next.js 16 |
+| 2 | **Web** | rotate: React 19 + Vite + Tailwind v4, SvelteKit 5, Next.js 16 |
+| 3 | **Backend** | rotate: Go (net/http), TypeScript (Hono), Python (FastAPI), Rust (Axum) |
+
+`%j` is the **UTC** day of the year. The nightly fire and its backups all fall on
+the same UTC day, so they resolve to the same track and the same slot — which is
+what stops a day ever producing two projects.
 
 ## What counts as a project
 
@@ -45,7 +52,8 @@ grocery list · shift planner · reading tracker · sleep log
      complete source and say so in the README.
    - Neither mobile track has an emulator, so ship a hand-drawn SVG **mockup**
      for the preview — label it "UI mockup" and never call it a screenshot.
-5. **One project per night.** If today's slot already exists, stop.
+5. **One project per night, on one platform.** If a folder for today's date
+   already exists, stop immediately and build nothing.
 
 ## Every project ships
 

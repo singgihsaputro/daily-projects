@@ -1,0 +1,42 @@
+[
+  {
+    "id": "drink-water",
+    "name": "Drink Water",
+    "emoji": "💧",
+    "streak": 5,
+    "completedToday": false,
+    "last7Days": [true, true, false, true, true, true, false]
+  },
+  {
+    "id": "read",
+    "name": "Read 10 Pages",
+    "emoji": "📖",
+    "streak": 12,
+    "completedToday": true,
+    "last7Days": [true, true, true, true, true, true, true]
+  },
+  {
+    "id": "stretch",
+    "name": "Stretch",
+    "emoji": "🧘",
+    "streak": 0,
+    "completedToday": false,
+    "last7Days": [false, false, true, false, false, false, false]
+  },
+  {
+    "id": "journal",
+    "name": "Journal",
+    "emoji": "✍️",
+    "streak": 3,
+    "completedToday": false,
+    "last7Days": [false, true, true, true, false, true, false]
+  },
+  {
+    "id": "no-sugar",
+    "name": "No Added Sugar",
+    "emoji": "🍬",
+    "streak": 8,
+    "completedToday": true,
+    "last7Days": [true, true, true, false, true, true, true]
+  }
+]

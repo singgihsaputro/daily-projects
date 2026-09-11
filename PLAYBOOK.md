@@ -8,14 +8,19 @@ the routine reads it fresh every run, so changes take effect the next night.
 Deterministic, from the day of the year (`date +%j`):
 
 **One platform per day. Never two.** The cycle runs
-Android → iOS → Web → Backend, then back to Android.
+Android → iOS → Web → Backend → Kotlin Multiplatform, then back to Android.
 
-| `%j mod 4` | Track | Stack |
+Index the table with `(%j + 3) mod 5`. The `+ 3` is not decoration: it keeps the
+sequence continuous with the projects already in `projects/`, so adding the KMP
+track did not reshuffle or repeat a day.
+
+| `(%j + 3) mod 5` | Track | Stack |
 |---|---|---|
 | 0 | **Android** | Kotlin, Jetpack Compose, Material 3, ViewModel + StateFlow, Gradle KTS |
 | 1 | **iOS** | Swift 6, SwiftUI, `@Observable`, Swift Package Manager |
-| 2 | **Web** | rotate: React 19 + Vite + Tailwind v4, SvelteKit 5, Next.js 16 |
+| 2 | **Web** | **Vue 3** — rotate: Vue 3 + Vite + Tailwind v4, Nuxt 4, Vue 3 + Pinia. Composition API and `<script setup>` throughout. No React. |
 | 3 | **Backend** | rotate: Go (net/http), TypeScript (Hono), Python (FastAPI), Rust (Axum) |
+| 4 | **Kotlin Multiplatform** | KMP + Compose Multiplatform, `shared/` module with `commonMain`, Android and iOS targets, `expect`/`actual` where a platform differs |
 
 `%j` is the **UTC** day of the year. The nightly fire and its backups all fall on
 the same UTC day, so they resolve to the same track and the same slot — which is
@@ -48,6 +53,10 @@ grocery list · shift planner · reading tracker · sleep log
    - **Android: the runner has a JDK and the Android SDK — run
      `./gradlew assembleDebug` and make it pass.** A project that does not
      compile does not ship.
+   - **Kotlin Multiplatform: build what this runner can.** `./gradlew
+     :shared:assemble` and the Android target must pass. The iOS target needs
+     Xcode and will not build here — say so in the README rather than implying
+     the whole thing was verified.
    - iOS: the runner is Linux, so there is no Xcode and no build. Write clean,
      complete source and say so in the README.
    - Neither mobile track has an emulator, so ship a hand-drawn SVG **mockup**

@@ -1,0 +1,12 @@
+[
+  {
+    "id": "cabin-trip",
+    "name": "Cabin Trip",
+    "members": ["Ada", "Ben", "Cleo", "Dev"]
+  },
+  {
+    "id": "roommates",
+    "name": "Roommates",
+    "members": ["Ada", "Ben"]
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "e1",
+    "groupId": "cabin-trip",
+    "description": "Cabin rental",
+    "amount": 400,
+    "paidBy": "Ada",
+    "splitBetween": ["Ada", "Ben", "Cleo", "Dev"]
+  },
+  {
+    "id": "e2",
+    "groupId": "cabin-trip",
+    "description": "Groceries",
+    "amount": 86,
+    "paidBy": "Ben",
+    "splitBetween": ["Ada", "Ben", "Cleo", "Dev"]
+  },
+  {
+    "id": "e3",
+    "groupId": "cabin-trip",
+    "description": "Firewood",
+    "amount": 24,
+    "paidBy": "Cleo",
+    "splitBetween": ["Ada", "Cleo"]
+  },
+  {
+    "id": "e4",
+    "groupId": "roommates",
+    "description": "Internet bill",
+    "amount": 60,
+    "paidBy": "Ada",
+    "splitBetween": ["Ada", "Ben"]
+  }
+]

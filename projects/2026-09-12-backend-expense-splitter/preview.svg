@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#1e1e2e"/>
+  <rect x="0" y="0" width="900" height="34" fill="#313244"/>
+  <circle cx="20" cy="17" r="6" fill="#f38ba8"/>
+  <circle cx="42" cy="17" r="6" fill="#f9e2af"/>
+  <circle cx="64" cy="17" r="6" fill="#a6e3a1"/>
+  <text x="450" y="22" fill="#cdd6f4" font-family="monospace" font-size="13" text-anchor="middle">expense-splitter — terminal</text>
+
+  <g font-family="monospace" font-size="13" fill="#cdd6f4">
+    <text x="16" y="60"><tspan fill="#a6e3a1">$</tspan> go run . &amp;</text>
+    <text x="16" y="80" fill="#9399b2">2026/09/12 18:11:59 expense-splitter listening on :8080</text>
+
+    <text x="16" y="112"><tspan fill="#a6e3a1">$</tspan> curl -s localhost:8080/api/groups/cabin-trip/balances</text>
+    <text x="16" y="132" fill="#89b4fa">{"net":{"Ada":266.5,"Ben":-35.5,"Cleo":-109.5,"Dev":-121.5},</text>
+    <text x="16" y="150" fill="#89b4fa"> "settlements":[{"from":"Dev","to":"Ada","amount":121.5},</text>
+    <text x="16" y="168" fill="#89b4fa">  {"from":"Cleo","to":"Ada","amount":109.5},</text>
+    <text x="16" y="186" fill="#89b4fa">  {"from":"Ben","to":"Ada","amount":35.5}]}</text>
+
+    <text x="16" y="218"><tspan fill="#a6e3a1">$</tspan> curl -s -X POST localhost:8080/api/groups/cabin-trip/expenses \</text>
+    <text x="32" y="236">-d '{"description":"Gas","amount":40,"paidBy":"Dev",</text>
+    <text x="32" y="254">     "splitBetween":["Ada","Ben","Cleo","Dev"]}'</text>
+    <text x="16" y="274" fill="#89b4fa">{"id":"e5","groupId":"cabin-trip","description":"Gas","amount":40,</text>
+    <text x="16" y="292" fill="#89b4fa"> "paidBy":"Dev","splitBetween":["Ada","Ben","Cleo","Dev"]}</text>
+
+    <text x="16" y="324"><tspan fill="#a6e3a1">$</tspan> curl -s localhost:8080/api/groups/cabin-trip/balances</text>
+    <text x="16" y="344" fill="#89b4fa">{"net":{"Ada":256.5,"Ben":-45.5,"Cleo":-119.5,"Dev":-91.5},</text>
+    <text x="16" y="362" fill="#89b4fa"> "settlements":[{"from":"Cleo","to":"Ada","amount":119.5},</text>
+    <text x="16" y="380" fill="#89b4fa">  {"from":"Dev","to":"Ada","amount":91.5},</text>
+    <text x="16" y="398" fill="#89b4fa">  {"from":"Ben","to":"Ada","amount":45.5}]}</text>
+
+    <text x="16" y="430"><tspan fill="#a6e3a1">$</tspan> curl -s -X POST .../cabin-trip/expenses -d '{"paidBy":"Zed",...}'</text>
+    <text x="16" y="450" fill="#f38ba8">HTTP 422 {"error":"paidBy \"Zed\" is not a member of group \"cabin-trip\""}</text>
+
+    <text x="16" y="482"><tspan fill="#a6e3a1">$</tspan> curl -s localhost:8080/api/groups/nope</text>
+    <text x="16" y="502" fill="#f38ba8">HTTP 404 {"error":"group not found"}</text>
+  </g>
+</svg>

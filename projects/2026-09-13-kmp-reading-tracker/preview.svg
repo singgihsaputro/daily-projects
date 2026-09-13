@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="720" viewBox="0 0 360 720" font-family="Helvetica, Arial, sans-serif">
+  <rect width="360" height="720" fill="#f4f0e8"/>
+  <rect x="1" y="1" width="358" height="718" rx="28" fill="none" stroke="#333" stroke-width="3"/>
+
+  <!-- status bar -->
+  <text x="20" y="24" font-size="12" fill="#333">9:41</text>
+  <text x="300" y="24" font-size="12" fill="#333">100%</text>
+
+  <!-- title -->
+  <text x="24" y="62" font-size="22" font-weight="bold" fill="#2C4A73">Reading Tracker</text>
+  <text x="24" y="84" font-size="13" fill="#555">2 finished &#183; 796 pages read</text>
+  <text x="24" y="104" font-size="11" fill="#B98A2E" font-style="italic">Shared engine running on: Android 34</text>
+
+  <!-- book card 1: finished -->
+  <rect x="20" y="124" width="320" height="110" rx="14" fill="#fff" stroke="#ddd" stroke-width="1.5"/>
+  <text x="36" y="150" font-size="15" font-weight="bold" fill="#222">Project Hail Mary</text>
+  <text x="36" y="168" font-size="12" fill="#666">Andy Weir</text>
+  <rect x="252" y="138" width="72" height="20" rx="10" fill="#e6dcc4"/>
+  <text x="288" y="152" font-size="10" fill="#7a5c1e" text-anchor="middle">Finished</text>
+  <rect x="36" y="182" width="288" height="8" rx="4" fill="#eee"/>
+  <rect x="36" y="182" width="288" height="8" rx="4" fill="#2C4A73"/>
+  <text x="36" y="212" font-size="11" fill="#555">496 / 496 pages</text>
+
+  <!-- book card 2: reading -->
+  <rect x="20" y="246" width="320" height="110" rx="14" fill="#fff" stroke="#ddd" stroke-width="1.5"/>
+  <text x="36" y="272" font-size="15" font-weight="bold" fill="#222">The Pragmatic Programmer</text>
+  <text x="36" y="290" font-size="12" fill="#666">David Thomas &amp; Andrew Hunt</text>
+  <rect x="270" y="260" width="54" height="20" rx="10" fill="#dce7f2"/>
+  <text x="297" y="274" font-size="10" fill="#2C4A73" text-anchor="middle">Reading</text>
+  <rect x="36" y="304" width="288" height="8" rx="4" fill="#eee"/>
+  <rect x="36" y="304" width="147" height="8" rx="4" fill="#2C4A73"/>
+  <text x="36" y="334" font-size="11" fill="#555">180 / 352 pages</text>
+  <rect x="240" y="320" width="84" height="26" rx="13" fill="#2C4A73"/>
+  <text x="282" y="337" font-size="11" fill="#fff" text-anchor="middle">+25 pages</text>
+
+  <!-- book card 3: want to read -->
+  <rect x="20" y="368" width="320" height="110" rx="14" fill="#fff" stroke="#ddd" stroke-width="1.5"/>
+  <text x="36" y="394" font-size="15" font-weight="bold" fill="#222">Piranesi</text>
+  <text x="36" y="412" font-size="12" fill="#666">Susanna Clarke</text>
+  <rect x="252" y="382" width="72" height="20" rx="10" fill="#f0f0f0"/>
+  <text x="288" y="396" font-size="10" fill="#555" text-anchor="middle">Want to read</text>
+  <rect x="36" y="426" width="288" height="8" rx="4" fill="#eee"/>
+  <text x="36" y="456" font-size="11" fill="#555">0 / 245 pages</text>
+  <rect x="240" y="442" width="84" height="26" rx="13" fill="#2C4A73"/>
+  <text x="282" y="459" font-size="11" fill="#fff" text-anchor="middle">+25 pages</text>
+
+  <!-- book card 4 partial, faded to show scroll -->
+  <rect x="20" y="490" width="320" height="60" rx="14" fill="#fff" stroke="#ddd" stroke-width="1.5" opacity="0.6"/>
+  <text x="36" y="516" font-size="15" font-weight="bold" fill="#222" opacity="0.6">Sapiens</text>
+  <text x="36" y="534" font-size="12" fill="#666" opacity="0.6">Yuval Noah Harari</text>
+
+  <!-- hand-drawn annotation -->
+  <text x="180" y="660" font-size="12" fill="#888" text-anchor="middle" font-style="italic">UI mockup — hand-drawn, not a rendered screenshot</text>
+</svg>

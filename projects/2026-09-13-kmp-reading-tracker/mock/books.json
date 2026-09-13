@@ -1,0 +1,50 @@
+[
+  {
+    "id": "b1",
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "totalPages": 496,
+    "pagesRead": 496,
+    "status": "FINISHED"
+  },
+  {
+    "id": "b2",
+    "title": "The Pragmatic Programmer",
+    "author": "David Thomas & Andrew Hunt",
+    "totalPages": 352,
+    "pagesRead": 180,
+    "status": "READING"
+  },
+  {
+    "id": "b3",
+    "title": "Piranesi",
+    "author": "Susanna Clarke",
+    "totalPages": 245,
+    "pagesRead": 0,
+    "status": "WANT_TO_READ"
+  },
+  {
+    "id": "b4",
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "totalPages": 464,
+    "pagesRead": 464,
+    "status": "FINISHED"
+  },
+  {
+    "id": "b5",
+    "title": "Klara and the Sun",
+    "author": "Kazuo Ishiguro",
+    "totalPages": 320,
+    "pagesRead": 40,
+    "status": "READING"
+  },
+  {
+    "id": "b6",
+    "title": "A Short History of Nearly Everything",
+    "author": "Bill Bryson",
+    "totalPages": 544,
+    "pagesRead": 0,
+    "status": "WANT_TO_READ"
+  }
+]

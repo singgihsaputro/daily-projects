@@ -1,0 +1,14 @@
+{
+  "dailyGoalMl": 2000,
+  "presets": [
+    { "id": "cup", "label": "Cup", "amountMl": 200 },
+    { "id": "glass", "label": "Glass", "amountMl": 250 },
+    { "id": "bottle", "label": "Bottle", "amountMl": 500 },
+    { "id": "large_bottle", "label": "Large Bottle", "amountMl": 750 }
+  ],
+  "entries": [
+    { "id": "1", "label": "Glass", "amountMl": 250, "time": "07:15" },
+    { "id": "2", "label": "Bottle", "amountMl": 500, "time": "09:40" },
+    { "id": "3", "label": "Cup", "amountMl": 200, "time": "11:05" }
+  ]
+}

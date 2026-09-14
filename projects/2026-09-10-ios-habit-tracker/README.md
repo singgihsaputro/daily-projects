@@ -2,9 +2,20 @@
 
 A single-screen SwiftUI app that lists daily habits, shows each one's streak and last-7-day history, and lets you check it off for today.
 
+![Habit Tracker running in the iOS Simulator](screenshot.png)
+
+*Running in the iOS Simulator. The five habits, their streaks and the 7-day dot
+rows all come from `mock/habits.json`.*
+
+<details>
+<summary>The original hand-drawn mockup, from before it was built</summary>
+
 ![UI mockup](preview.svg)
 
-*UI mockup — hand-drawn, not a screenshot. This sandbox is Linux with no Xcode and no iOS simulator, so the app was written but never launched or tapped through.*
+Written on a Linux CI runner with no Xcode, so this stood in for a screenshot
+until the app was actually run.
+
+</details>
 
 ## How to run
 
@@ -27,6 +38,9 @@ To actually see the screen, open the package in Xcode, add a new iOS App target,
 
 ## Limitations
 
-- **Not built or run.** This runner has a Swift 6 toolchain but is Linux, and SwiftUI does not exist there — `swift build` fails immediately on `import SwiftUI` (confirmed while building this project: `error: no such module 'SwiftUI'`). The Swift source is clean, complete, and not placeholder code, but it has only been read, never compiled.
+- **Built and run in the iOS Simulator** — see the screenshot above. It was
+  originally written on a Linux CI runner where `swift build` fails on
+  `import SwiftUI` (`error: no such module 'SwiftUI'`), so it shipped unverified
+  and said so; that no longer applies.
 - No persistence: toggling a habit only updates in-memory state: relaunching the app (in a real iOS environment) resets to the fixture data in `mock/habits.json`.
 - No way to add, edit, or delete habits — the list is fixed to what's in the fixture.

@@ -1,0 +1,15 @@
+[
+  { "id": "tshirts", "name": "3 T-Shirts", "category": "Clothing", "packed": true },
+  { "id": "jeans", "name": "Jeans", "category": "Clothing", "packed": true },
+  { "id": "jacket", "name": "Light Jacket", "category": "Clothing", "packed": false },
+  { "id": "swimsuit", "name": "Swimsuit", "category": "Clothing", "packed": false },
+  { "id": "toothbrush", "name": "Toothbrush", "category": "Toiletries", "packed": true },
+  { "id": "sunscreen", "name": "Sunscreen", "category": "Toiletries", "packed": false },
+  { "id": "shampoo", "name": "Travel Shampoo", "category": "Toiletries", "packed": true },
+  { "id": "phone-charger", "name": "Phone Charger", "category": "Electronics", "packed": true },
+  { "id": "power-adapter", "name": "EU Power Adapter", "category": "Electronics", "packed": false },
+  { "id": "headphones", "name": "Headphones", "category": "Electronics", "packed": true },
+  { "id": "passport", "name": "Passport", "category": "Documents", "packed": true },
+  { "id": "boarding-pass", "name": "Boarding Pass", "category": "Documents", "packed": false },
+  { "id": "hotel-confirmation", "name": "Hotel Confirmation", "category": "Documents", "packed": true }
+]

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="720" viewBox="0 0 390 720" font-family="Helvetica, Arial, sans-serif">
+  <!-- UI mockup, hand-drawn, not a screenshot -->
+  <rect width="390" height="720" rx="36" fill="#f2f2f7"/>
+  <rect x="4" y="4" width="382" height="712" rx="32" fill="none" stroke="#1c1c1e" stroke-width="3"/>
+
+  <!-- status bar -->
+  <text x="34" y="34" font-size="14" font-weight="600" fill="#1c1c1e">9:41</text>
+  <rect x="330" y="22" width="26" height="12" rx="2" fill="none" stroke="#1c1c1e" stroke-width="1.5"/>
+  <rect x="333" y="24.5" width="18" height="7" fill="#1c1c1e"/>
+
+  <!-- nav title -->
+  <text x="34" y="82" font-size="26" font-weight="700" fill="#1c1c1e">Pack for Lisbon</text>
+
+  <!-- progress -->
+  <rect x="30" y="98" width="330" height="6" rx="3" fill="#d1d1d6"/>
+  <rect x="30" y="98" width="211" height="6" rx="3" fill="#007aff"/>
+  <text x="30" y="124" font-size="12" fill="#6e6e73">8 of 13 packed</text>
+  <line x1="30" y1="140" x2="360" y2="140" stroke="#d1d1d6" stroke-width="1"/>
+
+  <!-- Clothing section -->
+  <text x="30" y="164" font-size="13" font-weight="700" fill="#6e6e73">👕 CLOTHING</text>
+  <g font-size="15" fill="#1c1c1e">
+    <circle cx="42" cy="188" r="9" fill="#007aff"/>
+    <path d="M38 188 l3 3 l6 -7" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="193">3 T-Shirts</text>
+
+    <circle cx="42" cy="216" r="9" fill="#007aff"/>
+    <path d="M38 216 l3 3 l6 -7" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="221">Jeans</text>
+
+    <circle cx="42" cy="244" r="9" fill="none" stroke="#8e8e93" stroke-width="2"/>
+    <text x="60" y="249">Light Jacket</text>
+
+    <circle cx="42" cy="272" r="9" fill="none" stroke="#8e8e93" stroke-width="2"/>
+    <text x="60" y="277">Swimsuit</text>
+  </g>
+  <line x1="30" y1="292" x2="360" y2="292" stroke="#d1d1d6" stroke-width="1"/>
+
+  <!-- Toiletries section -->
+  <text x="30" y="316" font-size="13" font-weight="700" fill="#6e6e73">💧 TOILETRIES</text>
+  <g font-size="15" fill="#1c1c1e">
+    <circle cx="42" cy="340" r="9" fill="#007aff"/>
+    <path d="M38 340 l3 3 l6 -7" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="345">Toothbrush</text>
+
+    <circle cx="42" cy="368" r="9" fill="none" stroke="#8e8e93" stroke-width="2"/>
+    <text x="60" y="373">Sunscreen</text>
+
+    <circle cx="42" cy="396" r="9" fill="#007aff"/>
+    <path d="M38 396 l3 3 l6 -7" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="401">Travel Shampoo</text>
+  </g>
+  <line x1="30" y1="416" x2="360" y2="416" stroke="#d1d1d6" stroke-width="1"/>
+
+  <!-- Electronics section -->
+  <text x="30" y="440" font-size="13" font-weight="700" fill="#6e6e73">⚡ ELECTRONICS</text>
+  <g font-size="15" fill="#1c1c1e">
+    <circle cx="42" cy="464" r="9" fill="#007aff"/>
+    <path d="M38 464 l3 3 l6 -7" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="469">Phone Charger</text>
+
+    <circle cx="42" cy="492" r="9" fill="none" stroke="#8e8e93" stroke-width="2"/>
+    <text x="60" y="497">EU Power Adapter</text>
+
+    <circle cx="42" cy="520" r="9" fill="#007aff"/>
+    <path d="M38 520 l3 3 l6 -7" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="525">Headphones</text>
+  </g>
+  <line x1="30" y1="540" x2="360" y2="540" stroke="#d1d1d6" stroke-width="1"/>
+
+  <!-- Documents section -->
+  <text x="30" y="564" font-size="13" font-weight="700" fill="#6e6e73">📄 DOCUMENTS</text>
+  <g font-size="15" fill="#1c1c1e">
+    <circle cx="42" cy="588" r="9" fill="#007aff"/>
+    <path d="M38 588 l3 3 l6 -7" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="593">Passport</text>
+
+    <circle cx="42" cy="616" r="9" fill="none" stroke="#8e8e93" stroke-width="2"/>
+    <text x="60" y="621">Boarding Pass</text>
+
+    <circle cx="42" cy="644" r="9" fill="#007aff"/>
+    <path d="M38 644 l3 3 l6 -7" stroke="white" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="60" y="649">Hotel Confirmation</text>
+  </g>
+
+  <!-- home indicator -->
+  <rect x="150" y="700" width="90" height="5" rx="2.5" fill="#1c1c1e"/>
+</svg>

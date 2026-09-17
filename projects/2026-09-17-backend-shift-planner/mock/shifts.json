@@ -1,0 +1,8 @@
+[
+  { "id": "sh1", "date": "2026-09-18", "start": "07:00", "end": "12:00", "role": "barista", "employeeId": "emp1" },
+  { "id": "sh2", "date": "2026-09-18", "start": "11:00", "end": "16:00", "role": "barista", "employeeId": null },
+  { "id": "sh3", "date": "2026-09-18", "start": "08:00", "end": "14:00", "role": "cook", "employeeId": "emp3" },
+  { "id": "sh4", "date": "2026-09-18", "start": "14:00", "end": "20:00", "role": "cook", "employeeId": null },
+  { "id": "sh5", "date": "2026-09-19", "start": "07:00", "end": "12:00", "role": "barista", "employeeId": null },
+  { "id": "sh6", "date": "2026-09-19", "start": "09:00", "end": "17:00", "role": "manager", "employeeId": "emp5" }
+]

@@ -1,0 +1,7 @@
+[
+  { "id": "emp1", "name": "Ada Osei", "role": "barista" },
+  { "id": "emp2", "name": "Ben Kato", "role": "barista" },
+  { "id": "emp3", "name": "Cleo Marsh", "role": "cook" },
+  { "id": "emp4", "name": "Dev Rana", "role": "cook" },
+  { "id": "emp5", "name": "Eli Fournier", "role": "manager" }
+]

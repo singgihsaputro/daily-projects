@@ -1,0 +1,18 @@
+[
+  { "id": "meter", "label": "Meter", "category": "LENGTH", "factorToBase": 1.0 },
+  { "id": "kilometer", "label": "Kilometer", "category": "LENGTH", "factorToBase": 1000.0 },
+  { "id": "centimeter", "label": "Centimeter", "category": "LENGTH", "factorToBase": 0.01 },
+  { "id": "mile", "label": "Mile", "category": "LENGTH", "factorToBase": 1609.34 },
+  { "id": "foot", "label": "Foot", "category": "LENGTH", "factorToBase": 0.3048 },
+  { "id": "inch", "label": "Inch", "category": "LENGTH", "factorToBase": 0.0254 },
+
+  { "id": "gram", "label": "Gram", "category": "WEIGHT", "factorToBase": 1.0 },
+  { "id": "kilogram", "label": "Kilogram", "category": "WEIGHT", "factorToBase": 1000.0 },
+  { "id": "pound", "label": "Pound", "category": "WEIGHT", "factorToBase": 453.592 },
+  { "id": "ounce", "label": "Ounce", "category": "WEIGHT", "factorToBase": 28.3495 },
+
+  { "id": "liter", "label": "Liter", "category": "VOLUME", "factorToBase": 1.0 },
+  { "id": "milliliter", "label": "Milliliter", "category": "VOLUME", "factorToBase": 0.001 },
+  { "id": "gallon", "label": "Gallon", "category": "VOLUME", "factorToBase": 3.78541 },
+  { "id": "cup", "label": "Cup", "category": "VOLUME", "factorToBase": 0.236588 }
+]

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="720" viewBox="0 0 360 720" font-family="Helvetica, Arial, sans-serif">
+  <rect width="360" height="720" fill="#f2f5f4"/>
+  <rect x="1" y="1" width="358" height="718" rx="28" fill="none" stroke="#333" stroke-width="3"/>
+
+  <!-- status bar -->
+  <text x="20" y="24" font-size="12" fill="#333">9:41</text>
+  <text x="300" y="24" font-size="12" fill="#333">100%</text>
+
+  <!-- title -->
+  <text x="24" y="62" font-size="22" font-weight="bold" fill="#00695C">Unit Converter</text>
+
+  <!-- category chips -->
+  <rect x="24" y="80" width="84" height="32" rx="16" fill="#00695C"/>
+  <text x="66" y="101" font-size="12" fill="#fff" text-anchor="middle">Length</text>
+  <rect x="116" y="80" width="84" height="32" rx="16" fill="none" stroke="#999" stroke-width="1.5"/>
+  <text x="158" y="101" font-size="12" fill="#555" text-anchor="middle">Weight</text>
+  <rect x="208" y="80" width="84" height="32" rx="16" fill="none" stroke="#999" stroke-width="1.5"/>
+  <text x="250" y="101" font-size="12" fill="#555" text-anchor="middle">Volume</text>
+
+  <!-- amount field -->
+  <text x="24" y="142" font-size="11" fill="#777">Amount</text>
+  <rect x="24" y="150" width="312" height="48" rx="8" fill="#fff" stroke="#bbb" stroke-width="1.5"/>
+  <text x="36" y="180" font-size="16" fill="#222">3</text>
+
+  <!-- from dropdown -->
+  <text x="24" y="226" font-size="11" fill="#777">From</text>
+  <rect x="24" y="234" width="312" height="48" rx="8" fill="#fff" stroke="#bbb" stroke-width="1.5"/>
+  <text x="36" y="264" font-size="16" fill="#222">Kilometer</text>
+  <text x="312" y="264" font-size="12" fill="#888">&#9662;</text>
+
+  <!-- swap button -->
+  <circle cx="180" cy="308" r="20" fill="#e0efec" stroke="#00695C" stroke-width="1.5"/>
+  <text x="180" y="314" font-size="16" fill="#00695C" text-anchor="middle">&#8645;</text>
+
+  <!-- to dropdown -->
+  <text x="24" y="352" font-size="11" fill="#777">To</text>
+  <rect x="24" y="360" width="312" height="48" rx="8" fill="#fff" stroke="#bbb" stroke-width="1.5"/>
+  <text x="36" y="390" font-size="16" fill="#222">Meter</text>
+  <text x="312" y="390" font-size="12" fill="#888">&#9662;</text>
+
+  <!-- result card -->
+  <rect x="24" y="432" width="312" height="120" rx="16" fill="#fff" stroke="#ddd" stroke-width="1.5"/>
+  <text x="180" y="490" font-size="34" font-weight="bold" fill="#00695C" text-anchor="middle">3,000</text>
+  <text x="180" y="518" font-size="13" fill="#555" text-anchor="middle">Meter</text>
+
+  <!-- hand-drawn annotation -->
+  <text x="180" y="660" font-size="12" fill="#888" text-anchor="middle" font-style="italic">UI mockup — hand-drawn, not a rendered screenshot</text>
+</svg>

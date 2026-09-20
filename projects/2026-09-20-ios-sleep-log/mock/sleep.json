@@ -1,0 +1,9 @@
+[
+  { "id": "n1", "date": "2026-09-14", "hours": 6.5, "quality": "fair" },
+  { "id": "n2", "date": "2026-09-15", "hours": 7.5, "quality": "good" },
+  { "id": "n3", "date": "2026-09-16", "hours": 5.5, "quality": "poor" },
+  { "id": "n4", "date": "2026-09-17", "hours": 8.0, "quality": "great" },
+  { "id": "n5", "date": "2026-09-18", "hours": 7.0, "quality": "good" },
+  { "id": "n6", "date": "2026-09-19", "hours": 6.0, "quality": "fair" },
+  { "id": "n7", "date": "2026-09-20", "hours": 8.5, "quality": "great" }
+]

@@ -12,9 +12,14 @@ Deterministic, from the day of the year (`date +%j`):
 Android → iOS → Web → Backend → KMP mobile → **KMP full-stack** →
 **Android library** → **Freelance web app** → back to Android.
 
-Index the table with `(%j + 4) mod 8`. The offset is not decoration: it keeps the
-sequence continuous with what is already in `projects/`, so widening the rotation
-never reshuffles or repeats a day.
+Index the table with `(%j + 4) mod 8`. The offset is chosen so the first
+full-stack day falls on 2026-09-22 and the cycle runs cleanly from there.
+
+Widening five tracks to eight does **not** preserve how past days map — re-deriving
+a track for 2026-09-14 under this formula gives a different answer than the one
+that actually built it. That is harmless, because nothing ever re-derives a past
+day: the only check is whether a folder for *today's* date already exists. Do not
+try to "fix" old folders to match.
 
 | `(%j + 4) mod 8` | Track | Stack | Budget |
 |---|---|---|---|

@@ -5,10 +5,11 @@ Build tonight's mini project in this repository.
 
 2. Work out today's slot:
    - `today=$(date -u +%F)`, `doy=$((10#$(date -u +%j)))`
-   - track = `(doy + 3) % 5` → 0 Android, 1 iOS, 2 Web, 3 Backend, 4 KMP
-     (the cycle reads Android → iOS → Web → Backend → Kotlin Multiplatform,
-     one platform per day; the +3 keeps the sequence continuous with the
-     projects already in `projects/`)
+   - track = `(doy + 4) % 8` → 0 Android, 1 iOS, 2 Web, 3 Backend,
+     4 KMP mobile, 5 KMP full-stack, 6 Android library, 7 Freelance web app
+     (one track per day; the +4 keeps the sequence continuous with the projects
+     already in `projects/`). PLAYBOOK.md describes each track and its budget —
+     the last three are not ordinary app days, so read it before starting.
    - If any directory in `projects/` already starts with today's date, stop and
      do nothing at all.
 

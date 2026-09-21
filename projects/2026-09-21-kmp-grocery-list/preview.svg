@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="720" viewBox="0 0 360 720" font-family="Helvetica, Arial, sans-serif">
+  <rect width="360" height="720" fill="#f2f5f0"/>
+  <rect x="1" y="1" width="358" height="718" rx="28" fill="none" stroke="#333" stroke-width="3"/>
+
+  <!-- status bar -->
+  <text x="20" y="24" font-size="12" fill="#333">9:41</text>
+  <text x="300" y="24" font-size="12" fill="#333">100%</text>
+
+  <!-- title -->
+  <text x="24" y="62" font-size="22" font-weight="bold" fill="#2E7D32">Grocery List</text>
+
+  <!-- progress row -->
+  <text x="24" y="88" font-size="12" fill="#555">6 of 15 in cart</text>
+  <text x="290" y="88" font-size="12" fill="#2E7D32" text-decoration="underline">Clear checked</text>
+  <rect x="24" y="96" width="312" height="8" rx="4" fill="#dfe6df"/>
+  <rect x="24" y="96" width="125" height="8" rx="4" fill="#2E7D32"/>
+  <text x="24" y="120" font-size="11" fill="#777">40%</text>
+
+  <!-- add item row -->
+  <rect x="24" y="132" width="180" height="40" rx="8" fill="#fff" stroke="#bbb" stroke-width="1.5"/>
+  <text x="34" y="157" font-size="13" fill="#999">Add item</text>
+  <rect x="210" y="132" width="90" height="40" rx="8" fill="#fff" stroke="#bbb" stroke-width="1.5"/>
+  <text x="220" y="157" font-size="12" fill="#333">Produce &#9662;</text>
+  <circle cx="322" cy="152" r="18" fill="#2E7D32"/>
+  <text x="322" y="158" font-size="16" fill="#fff" text-anchor="middle">+</text>
+
+  <!-- Produce header -->
+  <text x="24" y="200" font-size="13" font-weight="bold" fill="#333">Produce</text>
+  <rect x="24" y="208" width="16" height="16" rx="3" fill="#2E7D32"/>
+  <text x="48" y="221" font-size="14" fill="#999" text-decoration="line-through">Tomatoes (4)</text>
+  <rect x="24" y="234" width="16" height="16" rx="3" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="48" y="247" font-size="14" fill="#222">Apples (6)</text>
+  <text x="330" y="247" font-size="13" fill="#999" text-anchor="middle">&#10005;</text>
+  <rect x="24" y="260" width="16" height="16" rx="3" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="48" y="273" font-size="14" fill="#222">Spinach (1)</text>
+
+  <!-- Dairy header -->
+  <text x="24" y="306" font-size="13" font-weight="bold" fill="#333">Dairy</text>
+  <rect x="24" y="314" width="16" height="16" rx="3" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="48" y="327" font-size="14" fill="#222">Milk (1)</text>
+  <rect x="24" y="340" width="16" height="16" rx="3" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="48" y="353" font-size="14" fill="#222">Cheddar cheese (1)</text>
+  <rect x="24" y="366" width="16" height="16" rx="3" fill="#2E7D32"/>
+  <text x="48" y="379" font-size="14" fill="#999" text-decoration="line-through">Yogurt (4)</text>
+
+  <!-- Bakery header -->
+  <text x="24" y="412" font-size="13" font-weight="bold" fill="#333">Bakery</text>
+  <rect x="24" y="420" width="16" height="16" rx="3" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="48" y="433" font-size="14" fill="#222">Sourdough bread (1)</text>
+  <rect x="24" y="446" width="16" height="16" rx="3" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="48" y="459" font-size="14" fill="#222">Bagels (6)</text>
+
+  <!-- Pantry header -->
+  <text x="24" y="492" font-size="13" font-weight="bold" fill="#333">Pantry</text>
+  <rect x="24" y="500" width="16" height="16" rx="3" fill="none" stroke="#888" stroke-width="1.5"/>
+  <text x="48" y="513" font-size="14" fill="#222">Rice (1)</text>
+  <rect x="24" y="526" width="16" height="16" rx="3" fill="#2E7D32"/>
+  <text x="48" y="539" font-size="14" fill="#999" text-decoration="line-through">Pasta (2)</text>
+
+  <!-- fade hint of more below -->
+  <text x="180" y="580" font-size="12" fill="#aaa" text-anchor="middle">&#8942; Meat, Household &#8942;</text>
+
+  <!-- hand-drawn annotation -->
+  <text x="180" y="660" font-size="12" fill="#888" text-anchor="middle" font-style="italic">UI mockup — hand-drawn, not a rendered screenshot</text>
+</svg>

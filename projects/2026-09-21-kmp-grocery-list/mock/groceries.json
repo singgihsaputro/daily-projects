@@ -1,0 +1,22 @@
+[
+  { "id": "apple", "name": "Apples", "quantity": 6, "category": "PRODUCE" },
+  { "id": "spinach", "name": "Spinach", "quantity": 1, "category": "PRODUCE" },
+  { "id": "tomato", "name": "Tomatoes", "quantity": 4, "category": "PRODUCE", "checked": true },
+
+  { "id": "milk", "name": "Milk", "quantity": 1, "category": "DAIRY" },
+  { "id": "cheese", "name": "Cheddar cheese", "quantity": 1, "category": "DAIRY" },
+  { "id": "yogurt", "name": "Yogurt", "quantity": 4, "category": "DAIRY", "checked": true },
+
+  { "id": "bread", "name": "Sourdough bread", "quantity": 1, "category": "BAKERY" },
+  { "id": "bagels", "name": "Bagels", "quantity": 6, "category": "BAKERY" },
+
+  { "id": "chicken", "name": "Chicken breast", "quantity": 2, "category": "MEAT" },
+  { "id": "salmon", "name": "Salmon fillet", "quantity": 1, "category": "MEAT" },
+
+  { "id": "rice", "name": "Rice", "quantity": 1, "category": "PANTRY" },
+  { "id": "pasta", "name": "Pasta", "quantity": 2, "category": "PANTRY", "checked": true },
+  { "id": "olive-oil", "name": "Olive oil", "quantity": 1, "category": "PANTRY" },
+
+  { "id": "dish-soap", "name": "Dish soap", "quantity": 1, "category": "HOUSEHOLD" },
+  { "id": "paper-towels", "name": "Paper towels", "quantity": 2, "category": "HOUSEHOLD" }
+]

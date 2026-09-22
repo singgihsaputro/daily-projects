@@ -40,7 +40,14 @@ if [[ "$(basename "$dir")" == *-kidsbook-* ]]; then
   fi
 
   work=$(mktemp -d); trap 'rm -rf "$work"' EXIT
-  if ! git clone -q "https://github.com/$owner/$shelf.git" "$work" 2>/dev/null; then
+
+  # Authenticate from gh rather than assuming the ambient git credentials can
+  # push. The token lives only in this temp clone's config, which the trap removes.
+  tok=$(gh auth token 2>/dev/null || true)
+  [ -n "$tok" ] || { echo "no gh token — book stays in this repo."; exit 0; }
+  remote="https://x-access-token:${tok}@github.com/$owner/$shelf.git"
+
+  if ! git clone -q "$remote" "$work" 2>/dev/null; then
     echo "could not clone $shelf — book stays in this repo."; exit 0
   fi
   git -C "$work" checkout -q -B main
@@ -62,7 +69,8 @@ if [[ "$(basename "$dir")" == *-kidsbook-* ]]; then
     echo "| Book | Pages | PDF |"
     echo "|---|---|---|"
     for b in $(ls "$work/books" | sort -r); do
-      pages=$(pdfinfo "$work/books/$b/book.pdf" 2>/dev/null | awk '/^Pages/{print $2}')
+      # never let a missing PDF or a missing pdfinfo kill the publish
+      pages=$(pdfinfo "$work/books/$b/book.pdf" 2>/dev/null | awk '/^Pages/{print $2}' || true)
       echo "| [$b](books/$b) | ${pages:-—} | [book.pdf](books/$b/book.pdf) |"
     done
   } > "$work/README.md"
@@ -73,7 +81,7 @@ if [[ "$(basename "$dir")" == *-kidsbook-* ]]; then
                  commit -q -m "Add $book
 
 $desc"
-  if ! git -C "$work" push -q origin main 2>/dev/null; then
+  if ! git -C "$work" push -q "$remote" main 2>/dev/null; then
     echo "could not push to $shelf — book stays in this repo."; exit 0
   fi
   echo "published https://github.com/$owner/$shelf/tree/main/books/$book"

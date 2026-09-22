@@ -44,6 +44,12 @@ book.pdf         the output, committed
 preview/*.png    three or four pages rendered as images for the README
 ```
 
+**These do not get a repository each.** Every book lands in one shelf repository,
+`kids-activity-books`, under `books/<YYYY-MM-DD>-kidsbook-<theme>/`, and the shelf
+README indexes them with page counts. `publish.sh` handles this — thirty
+repositories each holding one PDF would be noise, one shelf of thirty books is a
+thing. Pick a theme not already on the shelf.
+
 Designing for this age is the actual constraint:
 
 - **Thick lines, big shapes.** Nothing a 2-year-old cannot see or a crayon cannot

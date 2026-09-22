@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/primary.swiftdeps"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/HttpLinkRepository.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/HttpLinkRepository.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/HttpLinkRepository.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/HttpLinkRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/HttpLinkRepository.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/HttpLinkRepository.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/LinkRepository.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/LinkRepository.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/LinkRepository.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/LinkRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/LinkRepository.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/LinkRepository.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Models/ShortLink.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLink.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLink.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLink~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLink.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLink.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ShortLinkApp.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkApp.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkApp.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkApp.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkApp.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ViewModels/ShortLinkModel.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkModel.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkModel.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkModel.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkModel.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Views/ShortLinkListView.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkListView.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkListView.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkListView~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkListView.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkListView.dia"
+  }
+}

@@ -80,3 +80,5 @@ Open `http://localhost:8090` — it lists the server's links live and lets you s
 - **The web client needs two terminals** (server + `http.server` serving the bundle) since Kotlin/JS doesn't bundle a backend; that's inherent to it being a static SPA talking to a separate API.
 - **In-memory only.** All three — server state, the mock seed, and every client's view of it — reset when the server restarts. No auth, no database, no rate limiting: this is a demo of the wiring, not a production shortener.
 - **Short codes aren't guaranteed globally unique across restarts** in the sense that a fresh server re-seeds from the same `mock/links.json`, so `kt2mp9`/`ktor7x`/`cmpweb1` reappear every time — expected for a from-scratch mock seed, not a bug.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

@@ -1,0 +1,721 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.xctest/Contents/MacOS/ShortLinkAppPackageTests",
+      "packagePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp",
+      "productName" : "ShortLinkAppPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.ShortLinkApp-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/sources",
+      "importPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/HttpLinkRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/LinkRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Models/ShortLink.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ShortLinkApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ViewModels/ShortLinkModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Views/ShortLinkListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ShortLinkApp",
+      "moduleOutputPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules/ShortLinkApp.swiftmodule",
+      "objects" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/HttpLinkRepository.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/LinkRepository.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLink.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkApp.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkModel.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkListView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j3",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/include/ShortLinkApp-Swift.h",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+        "-target",
+        "arm64-apple-ios17.0-simulator",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "iosapp"
+      ],
+      "outputFileMapPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/HttpLinkRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/LinkRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules/ShortLinkApp.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/HttpLinkRepository.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/LinkRepository.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Models/ShortLink.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ShortLinkApp.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ViewModels/ShortLinkModel.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Views/ShortLinkListView.swift"
+      ],
+      "tempsPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ShortLinkAppPackageTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/sources",
+      "importPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules/ShortLinkAppTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ShortLinkAppPackageTests",
+      "moduleOutputPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules/ShortLinkAppPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j3",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/include/ShortLinkAppPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+        "-target",
+        "arm64-apple-ios17.0-simulator",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "iosapp"
+      ],
+      "outputFileMapPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules/ShortLinkAppPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.ShortLinkAppTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build/sources",
+      "importPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Tests/ShortLinkAppTests/ShortLinkAppTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules/ShortLinkApp.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "ShortLinkAppTests",
+      "moduleOutputPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules/ShortLinkAppTests.swiftmodule",
+      "objects" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build/ShortLinkAppTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j3",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+        "-target",
+        "arm64-apple-ios17.0-simulator",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "iosapp"
+      ],
+      "outputFileMapPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build/ShortLinkAppTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules/ShortLinkAppTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Tests/ShortLinkAppTests/ShortLinkAppTests.swift"
+      ],
+      "tempsPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "ShortLinkApp" : [
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ShortLinkApp",
+      "-package-name",
+      "iosapp",
+      "-c",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/HttpLinkRepository.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/LinkRepository.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Models/ShortLink.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ShortLinkApp.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ViewModels/ShortLinkModel.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Views/ShortLinkListView.swift",
+      "-I",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j3",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/include/ShortLinkApp-Swift.h",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+      "-target",
+      "arm64-apple-ios17.0-simulator",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "iosapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ShortLinkAppPackageTests" : [
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ShortLinkAppPackageTests",
+      "-package-name",
+      "iosapp",
+      "-c",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j3",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/include/ShortLinkAppPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+      "-target",
+      "arm64-apple-ios17.0-simulator",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "iosapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "ShortLinkAppTests" : [
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "ShortLinkAppTests",
+      "-package-name",
+      "iosapp",
+      "-c",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Tests/ShortLinkAppTests/ShortLinkAppTests.swift",
+      "-I",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j3",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+      "-target",
+      "arm64-apple-ios17.0-simulator",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "iosapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "ShortLinkApp" : [
+
+    ],
+    "ShortLinkAppPackageTests" : [
+      "ShortLinkAppTests",
+      "ShortLinkApp"
+    ],
+    "ShortLinkAppTests" : [
+      "ShortLinkApp"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/HttpLinkRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Data/LinkRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Models/ShortLink.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ShortLinkApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/ViewModels/ShortLinkModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Sources/ShortLinkApp/Views/ShortLinkListView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/sources"
+    },
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/sources"
+    },
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/HttpLinkRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/LinkRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLink.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkApp.build/ShortLinkModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build/ShortLinkAppTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/Tests/ShortLinkAppTests/ShortLinkAppTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/ShortLinkAppTests.build/sources"
+    },
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-09-22-kmpfullstack-short-link-service/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt"
+    }
+  }
+}

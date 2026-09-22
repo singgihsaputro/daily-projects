@@ -95,3 +95,59 @@ jobs:
             desc=$(grep -m1 -vE '^\s*$|^#|^!\[' "$dir/README.md" 2>/dev/null || true)
             scripts/publish.sh "${dir%/}" "${desc:-A small daily project}"
           done
+
+  # iOS cannot be compiled on the Linux runner that writes the project, so the
+  # Swift that ships there is unverified. This builds it on macOS afterwards and
+  # records the result in the project's README, honestly either way.
+  verify-ios:
+    needs: build
+    runs-on: macos-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Find today's project, if it has iOS code
+        id: find
+        run: |
+          dir=$(ls -d "projects/$(date -u +%F)"-* 2>/dev/null | head -1 || true)
+          if [ -z "$dir" ]; then
+            echo "Nothing built today."; exit 0
+          fi
+          if ! find "$dir" -name '*.swift' -print -quit | grep -q .; then
+            echo "$dir has no Swift; nothing to verify."; exit 0
+          fi
+          echo "dir=$dir" >> "$GITHUB_OUTPUT"
+
+      - name: Build the Swift package
+        if: steps.find.outputs.dir != ''
+        id: swift
+        continue-on-error: true
+        working-directory: ${{ steps.find.outputs.dir }}
+        run: |
+          pkg=$(find . -name Package.swift -maxdepth 3 | head -1)
+          if [ -z "$pkg" ]; then
+            echo "No Package.swift — skipping."; exit 0
+          fi
+          cd "$(dirname "$pkg")"
+          xcrun swift build -Xswiftc "-sdk" -Xswiftc "$(xcrun --sdk iphonesimulator --show-sdk-path)" \
+                -Xswiftc "-target" -Xswiftc "arm64-apple-ios17.0-simulator" 2>&1 | tail -40
+
+      - name: Record the outcome in the README
+        if: steps.find.outputs.dir != ''
+        run: |
+          dir="${{ steps.find.outputs.dir }}"
+          result="${{ steps.swift.outcome }}"
+          [ "$result" = "success" ] \
+            && line="- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the \`verify-ios\` job." \
+            || line="- **iOS build: failing.** The \`verify-ios\` job could not compile this on macOS — see that run's log."
+          printf '\n%s\n' "$line" >> "$dir/README.md"
+          git config user.name  "Singgih Rochmad Saputro"
+          git config user.email "singgih.rochmad@gmail.com"
+          git add -A
+          git diff --staged --quiet || {
+            git commit -m "Record the iOS build result for $(date -u +%F)"
+            git pull --rebase -q origin main
+            git push
+          }

@@ -1,0 +1,7 @@
+Target dependency graph (3 targets)
+Target 'AllExcludingTests' in project 'Aggregate'
+➜ Explicit dependency on target 'ShortLinkApp-product' in project 'ShortLinkApp'
+➜ Explicit dependency on target 'ShortLinkApp' in project 'ShortLinkApp'
+Target 'ShortLinkApp-product' in project 'ShortLinkApp'
+➜ Explicit dependency on target 'ShortLinkApp' in project 'ShortLinkApp'
+Target 'ShortLinkApp' in project 'ShortLinkApp' (no dependencies)

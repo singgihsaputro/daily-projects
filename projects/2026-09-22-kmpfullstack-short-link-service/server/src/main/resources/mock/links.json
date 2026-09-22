@@ -1,0 +1,20 @@
+[
+  {
+    "code": "kt2mp9",
+    "longUrl": "https://kotlinlang.org/docs/multiplatform.html",
+    "createdAtEpochSeconds": 1758000000,
+    "clicks": 14
+  },
+  {
+    "code": "ktor7x",
+    "longUrl": "https://ktor.io/docs/welcome.html",
+    "createdAtEpochSeconds": 1758030000,
+    "clicks": 5
+  },
+  {
+    "code": "cmpweb1",
+    "longUrl": "https://www.jetbrains.com/lp/compose-multiplatform/",
+    "createdAtEpochSeconds": 1758060000,
+    "clicks": 0
+  }
+]

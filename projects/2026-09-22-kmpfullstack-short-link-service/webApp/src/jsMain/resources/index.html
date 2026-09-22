@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Short Links</title>
+    <style>
+        body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; color: #1a1a2e; }
+        h1 { margin-bottom: 4px; }
+        .hint { color: #666; font-size: 0.85rem; margin-bottom: 20px; }
+        form { display: flex; gap: 8px; margin-bottom: 8px; }
+        input[type=text] { flex: 1; padding: 8px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; }
+        button { padding: 8px 16px; font-size: 1rem; border: none; border-radius: 6px; background: #3f51b5; color: white; cursor: pointer; }
+        button:hover { background: #32408f; }
+        .error { color: #c62828; min-height: 1.2em; margin: 4px 0 16px; }
+        ul { list-style: none; padding: 0; }
+        li { border-bottom: 1px solid #eee; padding: 12px 0; }
+        .code { font-weight: bold; }
+        .url { color: #555; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .clicks { color: #888; font-size: 0.85rem; }
+        .visit-btn { background: #00897b; margin-top: 6px; }
+        .visit-btn:hover { background: #00695c; }
+    </style>
+</head>
+<body>
+    <h1>Short Links</h1>
+    <p class="hint">Talks to the real Ktor server at <code>http://localhost:8080</code> — start it with <code>./gradlew :server:run</code>.</p>
+    <form id="create-form">
+        <input type="text" id="url-input" placeholder="https://example.com/a/long/page" />
+        <button type="submit">Shorten</button>
+    </form>
+    <div class="error" id="error"></div>
+    <ul id="link-list"></ul>
+    <script src="shortlink-web.js"></script>
+</body>
+</html>

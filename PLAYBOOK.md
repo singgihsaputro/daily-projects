@@ -215,3 +215,13 @@ mock/*.json        the fixture data
 
 The README opens with one sentence on what the thing does, then the preview,
 then How to run. Not a feature tour.
+
+**This is checked, not trusted.** `scripts/check_project.sh` runs after the
+commit and before publishing, and fails the night if the README is missing, is
+shorter than eight lines, has no "How to run" section, or if any file still
+contains TODO, FIXME or lorem ipsum. A project that fails stays committed in the
+archive and is simply not published — fix it and the next run picks it up, since
+publish walks every folder.
+
+If the budget is tight, cut project scope, not the README. A library nobody can
+work out how to depend on is worth less than a smaller one that explains itself.

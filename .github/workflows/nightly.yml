@@ -84,6 +84,18 @@ jobs:
             -m "Built by the nightly agent. See the project README for what it does and how to run it."
           git push
 
+      # A night that runs out of room used to ship a repository with no README,
+      # and nothing noticed. This fails the run instead, after the work is safely
+      # committed but before it is published under a generic description.
+      - name: Refuse to publish an incomplete project
+        run: |
+          dir=$(ls -d "projects/$(date -u +%F)"-* 2>/dev/null | head -1 || true)
+          if [ -z "$dir" ]; then
+            echo "Nothing built today — nothing to check."
+            exit 0
+          fi
+          scripts/check_project.sh "$dir"
+
       # Idempotent: publish.sh skips any project that already has a repo, so
       # this also picks up nights where publishing failed or was not configured.
       - name: Publish projects that have no repo yet

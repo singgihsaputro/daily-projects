@@ -1,0 +1,13 @@
+{
+  "name": "Studio Delapan",
+  "tagline": "Web & product design studio",
+  "email": "hello@studiodelapan.dev",
+  "phone": "+62 812-3456-7890",
+  "address": "Jl. Kemang Raya No. 45, Jakarta Selatan, 12730",
+  "bankName": "Bank Central Asia",
+  "bankAccount": "4521-0198-7765",
+  "bankHolder": "Studio Delapan",
+  "defaultTaxRatePercent": 11,
+  "invoicePrefix": "STD",
+  "nextInvoiceSequence": 24
+}

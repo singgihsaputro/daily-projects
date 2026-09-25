@@ -1,0 +1,13 @@
+{
+  "presets": [
+    { "label": "Website", "content": "https://example.com" },
+    { "label": "Wi-Fi note", "content": "WIFI: HomeNet / ask at front desk" },
+    { "label": "Contact", "content": "Jordan Lee, +1 555 0102" },
+    { "label": "Plain text", "content": "Thanks for stopping by!" }
+  ],
+  "history": [
+    { "id": "1", "content": "https://example.com", "time": "08:12" },
+    { "id": "2", "content": "Locker code: 4471", "time": "07:40" },
+    { "id": "3", "content": "https://example.com/menu", "time": "Yesterday" }
+  ]
+}

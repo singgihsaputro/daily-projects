@@ -1,0 +1,8 @@
+[
+  {"id": 1, "title": "Team offsite", "emoji": "🏕", "date": "2026-11-14T09:00:00"},
+  {"id": 2, "title": "Mom's birthday", "emoji": "🎂", "date": "2026-10-21T00:00:00"},
+  {"id": 3, "title": "Flight to Bali", "emoji": "✈", "date": "2026-12-20T07:45:00"},
+  {"id": 4, "title": "New Year's Eve", "emoji": "🎆", "date": "2026-12-31T23:59:00"},
+  {"id": 5, "title": "Tax filing deadline", "emoji": "📄", "date": "2027-03-31T17:00:00"},
+  {"id": 6, "title": "Concert tickets", "emoji": "🎵", "date": "2026-10-01T20:00:00"}
+]

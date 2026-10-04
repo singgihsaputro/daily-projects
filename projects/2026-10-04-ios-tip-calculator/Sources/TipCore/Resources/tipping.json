@@ -1,0 +1,8 @@
+[
+  {"country": "United States", "flag": "🇺🇸", "currency": "USD", "note": "Tipping is expected at restaurants.", "suggested": [15, 18, 20], "defaultPercent": 18},
+  {"country": "Japan", "flag": "🇯🇵", "currency": "JPY", "note": "Tipping is not customary and can cause confusion.", "suggested": [0], "defaultPercent": 0},
+  {"country": "France", "flag": "🇫🇷", "currency": "EUR", "note": "Service is included; round up for good service.", "suggested": [0, 5, 10], "defaultPercent": 5},
+  {"country": "Australia", "flag": "🇦🇺", "currency": "AUD", "note": "Optional; 10% for great service in restaurants.", "suggested": [0, 5, 10], "defaultPercent": 10},
+  {"country": "Indonesia", "flag": "🇮🇩", "currency": "IDR", "note": "Check for a 5-10% service charge on the bill first.", "suggested": [0, 5, 10], "defaultPercent": 5},
+  {"country": "United Kingdom", "flag": "🇬🇧", "currency": "GBP", "note": "10-12.5% unless a service charge is already added.", "suggested": [10, 12, 15], "defaultPercent": 12}
+]

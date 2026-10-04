@@ -32,3 +32,5 @@ On Linux, `swift test` fails to build the `TipCalculator` UI target (`no such mo
 - **Verified here:** `TipCore` built and all 6 unit tests passed on Linux (Swift 6.x), using a copy of the package without the UI target.
 - Tipping guidance is illustrative fixture data, not authoritative advice.
 - One currency per country, no exchange rates, no saved history.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "n1",
+    "title": "Trip to Yogyakarta",
+    "body": "# Trip to Yogyakarta\n\nThings to **book** before leaving:\n\n- Train tickets (Gambir → Tugu)\n- Hotel near *Malioboro*\n- Borobudur sunrise tour\n\n> Pack light, buy batik there.\n\nSee `itinerary.md` for the day plan.",
+    "updatedAt": "2026-10-01T08:30:00Z"
+  },
+  {
+    "id": "n2",
+    "title": "Standup notes",
+    "body": "## Standup\n\n1. Finish the settings screen\n2. Review Dina's PR\n3. Update the changelog\n\n```\nnpm run build\nnpm test\n```\n\nBlocked on [design review](https://example.com/review).",
+    "updatedAt": "2026-10-03T02:10:00Z"
+  },
+  {
+    "id": "n3",
+    "title": "Groceries",
+    "body": "### Groceries\n\n- Eggs\n- Rice\n- Tempeh\n- Chilies\n\n---\n\nTotal budget: **Rp 150.000**",
+    "updatedAt": "2026-10-04T11:45:00Z"
+  }
+]

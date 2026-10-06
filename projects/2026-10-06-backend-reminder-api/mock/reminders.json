@@ -1,0 +1,7 @@
+[
+  {"id": 1, "title": "Renew car registration", "due": "2026-10-08T09:00:00Z", "priority": "high", "done": false},
+  {"id": 2, "title": "Water the plants", "due": "2026-10-06T07:30:00Z", "priority": "low", "done": false},
+  {"id": 3, "title": "Send invoice to client", "due": "2026-10-05T16:00:00Z", "priority": "high", "done": false},
+  {"id": 4, "title": "Book dentist appointment", "due": "2026-10-12T12:00:00Z", "priority": "normal", "done": false},
+  {"id": 5, "title": "Pay electricity bill", "due": "2026-10-03T10:00:00Z", "priority": "normal", "done": true}
+]

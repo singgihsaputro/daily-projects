@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/primary.swiftdeps"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/BookmarkApp.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkApp.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkApp.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkApp~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkApp.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkApp.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/BookmarkRepository.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkRepository.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkRepository.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkRepository.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkRepository.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/HttpBookmarkRepository.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/HttpBookmarkRepository.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/HttpBookmarkRepository.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/HttpBookmarkRepository~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/HttpBookmarkRepository.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/HttpBookmarkRepository.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Models/Bookmark.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/Bookmark.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/Bookmark.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/Bookmark~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/Bookmark.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/Bookmark.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/ViewModels/BookmarkModel.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkModel.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkModel.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkModel.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkModel.dia"
+  },
+  "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Views/BookmarkListView.swift": {
+    "dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkListView.d",
+    "object": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkListView.swift.o",
+    "swiftmodule": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkListView~partial.swiftmodule",
+    "swift-dependencies": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkListView.swiftdeps",
+    "diagnostics": "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkListView.dia"
+  }
+}

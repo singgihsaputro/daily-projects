@@ -1,0 +1,721 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.xctest/Contents/MacOS/BookmarkAppPackageTests",
+      "packagePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp",
+      "productName" : "BookmarkAppPackageTests"
+    }
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.BookmarkApp-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/sources",
+      "importPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/BookmarkApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/BookmarkRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/HttpBookmarkRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Models/Bookmark.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/ViewModels/BookmarkModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Views/BookmarkListView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "BookmarkApp",
+      "moduleOutputPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules/BookmarkApp.swiftmodule",
+      "objects" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkApp.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkRepository.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/HttpBookmarkRepository.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/Bookmark.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkModel.swift.o",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkListView.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j3",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/include/BookmarkApp-Swift.h",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+        "-target",
+        "arm64-apple-ios17.0-simulator",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "iosapp"
+      ],
+      "outputFileMapPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/HttpBookmarkRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/Bookmark.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules/BookmarkApp.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/BookmarkApp.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/BookmarkRepository.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/HttpBookmarkRepository.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Models/Bookmark.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/ViewModels/BookmarkModel.swift",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Views/BookmarkListView.swift"
+      ],
+      "tempsPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.BookmarkAppPackageTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/sources",
+      "importPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules/BookmarkAppTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "BookmarkAppPackageTests",
+      "moduleOutputPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules/BookmarkAppPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx10.13",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j3",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/include/BookmarkAppPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+        "-target",
+        "arm64-apple-ios17.0-simulator",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "iosapp"
+      ],
+      "outputFileMapPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules/BookmarkAppPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.BookmarkAppTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build/sources",
+      "importPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Tests/BookmarkAppTests/BookmarkAppTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules/BookmarkApp.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "BookmarkAppTests",
+      "moduleOutputPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules/BookmarkAppTests.swiftmodule",
+      "objects" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build/BookmarkAppTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j3",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "6",
+        "-plugin-path",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-sdk",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+        "-target",
+        "arm64-apple-ios17.0-simulator",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "iosapp"
+      ],
+      "outputFileMapPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build/BookmarkAppTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules/BookmarkAppTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Tests/BookmarkAppTests/BookmarkAppTests.swift"
+      ],
+      "tempsPath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "BookmarkApp" : [
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "BookmarkApp",
+      "-package-name",
+      "iosapp",
+      "-c",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/BookmarkApp.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/BookmarkRepository.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/HttpBookmarkRepository.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Models/Bookmark.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/ViewModels/BookmarkModel.swift",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Views/BookmarkListView.swift",
+      "-I",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j3",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/include/BookmarkApp-Swift.h",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+      "-target",
+      "arm64-apple-ios17.0-simulator",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "iosapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "BookmarkAppPackageTests" : [
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "BookmarkAppPackageTests",
+      "-package-name",
+      "iosapp",
+      "-c",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx10.13",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j3",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/include/BookmarkAppPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+      "-target",
+      "arm64-apple-ios17.0-simulator",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "iosapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "BookmarkAppTests" : [
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "BookmarkAppTests",
+      "-package-name",
+      "iosapp",
+      "-c",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Tests/BookmarkAppTests/BookmarkAppTests.swift",
+      "-I",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j3",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "6",
+      "-plugin-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-sdk",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator26.5.sdk",
+      "-target",
+      "arm64-apple-ios17.0-simulator",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "iosapp",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "BookmarkApp" : [
+
+    ],
+    "BookmarkAppPackageTests" : [
+      "BookmarkAppTests",
+      "BookmarkApp"
+    ],
+    "BookmarkAppTests" : [
+      "BookmarkApp"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/BookmarkApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/BookmarkRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Data/HttpBookmarkRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Models/Bookmark.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/ViewModels/BookmarkModel.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Sources/BookmarkApp/Views/BookmarkListView.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/sources"
+    },
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/sources"
+    },
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/Bookmark.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkListView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkModel.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/BookmarkRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkApp.build/HttpBookmarkRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build/BookmarkAppTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/Tests/BookmarkAppTests/BookmarkAppTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/BookmarkAppTests.build/sources"
+    },
+    "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode_26.6.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/runner/work/daily-projects/daily-projects/projects/2026-10-08-kmpfullstack-bookmark-store/iosApp/.build/arm64-apple-macosx/debug/swift-version-7974D3F7F03D5E95.txt"
+    }
+  }
+}

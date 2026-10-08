@@ -85,3 +85,5 @@ $ curl -X DELETE localhost:8080/bookmarks/3         -> 404, "No bookmark with id
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
 
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="760" viewBox="0 0 420 760" font-family="Roboto, Arial, sans-serif">
+<rect width="420" height="760" rx="28" fill="#fffbfe" stroke="#79747e" stroke-width="2"/>
+<rect x="0" y="0" width="420" height="64" rx="28" fill="#6750a4"/><rect y="40" width="420" height="24" fill="#6750a4"/>
+<text x="20" y="42" font-size="20" fill="#fff">ID Formatters sample</text>
+<rect x="14" y="84" width="392" height="156" rx="12" fill="#f3edf7"/>
+<text x="28" y="114" font-size="17" font-weight="bold" fill="#1d1b20">Budi Santoso</text>
+<text x="28" y="146" font-size="12" fill="#1d1b20">Saldo Rp 1.250.000 (Rp 1,2 jt)</text>
+<text x="28" y="174" font-size="12" fill="#1d1b20">0812-3456-7890 · Telkomsel · +6281234567890</text>
+<text x="28" y="202" font-size="12" fill="#1d1b20">NIK 3171••••••••0001 · DKI Jakarta · 1990-05-15 · MALE</text>
+<rect x="14" y="256" width="392" height="156" rx="12" fill="#f3edf7"/>
+<text x="28" y="286" font-size="17" font-weight="bold" fill="#1d1b20">Siti Rahma</text>
+<text x="28" y="318" font-size="12" fill="#1d1b20">Saldo Rp 45.000 (Rp 45 rb)</text>
+<text x="28" y="346" font-size="12" fill="#1d1b20">0857-1122-3344 · Indosat · +6285711223344</text>
+<text x="28" y="374" font-size="12" fill="#1d1b20">NIK 3578••••••••0002 · Jawa Timur · 2002-06-15 · FEMALE</text>
+<rect x="14" y="428" width="392" height="156" rx="12" fill="#f3edf7"/>
+<text x="28" y="458" font-size="17" font-weight="bold" fill="#1d1b20">Agus Wijaya</text>
+<text x="28" y="490" font-size="12" fill="#1d1b20">Saldo -Rp 150.000 (-Rp 150 rb)</text>
+<text x="28" y="518" font-size="12" fill="#1d1b20">0896-1234-5678 · Tri · +6289612345678</text>
+<text x="28" y="546" font-size="12" fill="#1d1b20">NIK 3171••••••••0003 · DKI Jakarta · 1996-02-29 · MALE</text>
+<rect x="14" y="600" width="392" height="156" rx="12" fill="#f9dedc"/>
+<text x="28" y="630" font-size="17" font-weight="bold" fill="#1d1b20">Dewi Lestari</text>
+<text x="28" y="662" font-size="12" fill="#1d1b20">Saldo Rp 2.350.000.000 (Rp 2,3 M)</text>
+<text x="28" y="690" font-size="12" fill="#1d1b20">Nomor HP tidak valid: 0215551234</text>
+<text x="28" y="718" font-size="12" fill="#1d1b20">NIK tidak valid: 3171••••••••0001</text>
+<text x="210" y="748" font-size="11" text-anchor="middle" fill="#49454f">UI mockup — not a screenshot</text></svg>

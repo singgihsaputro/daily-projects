@@ -1,0 +1,6 @@
+[
+  {"name": "Budi Santoso", "phone": "081234567890", "nik": "3171011505900001", "balance": 1250000},
+  {"name": "Siti Rahma", "phone": "+62 857-1122-3344", "nik": "3578015506020002", "balance": 45000},
+  {"name": "Agus Wijaya", "phone": "6289612345678", "nik": "3171012902960003", "balance": -150000},
+  {"name": "Dewi Lestari", "phone": "0215551234", "nik": "3171013002900001", "balance": 2350000000}
+]

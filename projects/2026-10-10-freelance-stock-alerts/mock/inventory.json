@@ -1,0 +1,14 @@
+[
+  { "sku": "BR-001", "name": "Beras Premium 5kg", "category": "Staples", "supplier": "CV Tani Makmur", "unitCost": 68000, "stock": 4, "reorderLevel": 10, "reorderQty": 20 },
+  { "sku": "BR-002", "name": "Minyak Goreng 2L", "category": "Staples", "supplier": "CV Tani Makmur", "unitCost": 36000, "stock": 0, "reorderLevel": 12, "reorderQty": 24 },
+  { "sku": "BR-003", "name": "Gula Pasir 1kg", "category": "Staples", "supplier": "PT Manis Jaya", "unitCost": 16500, "stock": 31, "reorderLevel": 15, "reorderQty": 30 },
+  { "sku": "DR-010", "name": "Teh Botol 450ml", "category": "Drinks", "supplier": "PT Segar Abadi", "unitCost": 4200, "stock": 58, "reorderLevel": 36, "reorderQty": 48 },
+  { "sku": "DR-011", "name": "Air Mineral 600ml", "category": "Drinks", "supplier": "PT Segar Abadi", "unitCost": 2300, "stock": 36, "reorderLevel": 48, "reorderQty": 72 },
+  { "sku": "DR-012", "name": "Kopi Sachet (10 pcs)", "category": "Drinks", "supplier": "PT Nusantara Kopi", "unitCost": 14000, "stock": 22, "reorderLevel": 10, "reorderQty": 20 },
+  { "sku": "SN-020", "name": "Keripik Singkong 200g", "category": "Snacks", "supplier": "UD Renyah", "unitCost": 11000, "stock": 9, "reorderLevel": 8, "reorderQty": 24 },
+  { "sku": "SN-021", "name": "Wafer Cokelat", "category": "Snacks", "supplier": "PT Manis Jaya", "unitCost": 7500, "stock": 3, "reorderLevel": 12, "reorderQty": 36 },
+  { "sku": "HH-030", "name": "Sabun Cuci Piring 800ml", "category": "Household", "supplier": "PT Bersih Sejahtera", "unitCost": 15500, "stock": 17, "reorderLevel": 6, "reorderQty": 12 },
+  { "sku": "HH-031", "name": "Deterjen Bubuk 1kg", "category": "Household", "supplier": "PT Bersih Sejahtera", "unitCost": 24000, "stock": 0, "reorderLevel": 8, "reorderQty": 16 },
+  { "sku": "HH-032", "name": "Tisu Gulung (4 pcs)", "category": "Household", "supplier": "UD Lembut", "unitCost": 13000, "stock": 26, "reorderLevel": 10, "reorderQty": 20 },
+  { "sku": "EG-040", "name": "Telur Ayam 1kg", "category": "Fresh", "supplier": "Peternakan Sumber Rejeki", "unitCost": 29000, "stock": 12, "reorderLevel": 12, "reorderQty": 20 }
+]

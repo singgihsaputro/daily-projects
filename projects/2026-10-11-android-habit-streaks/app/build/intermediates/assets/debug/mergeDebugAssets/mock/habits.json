@@ -1,0 +1,7 @@
+[
+  {"id": 1, "name": "Drink water", "emoji": "💧", "doneDaysAgo": [0, 1, 2, 3, 4, 5, 6, 8, 9]},
+  {"id": 2, "name": "Read 20 pages", "emoji": "📖", "doneDaysAgo": [1, 2, 3, 5, 6, 7]},
+  {"id": 3, "name": "Morning run", "emoji": "🏃", "doneDaysAgo": [0, 2, 4, 6, 8]},
+  {"id": 4, "name": "Meditate", "emoji": "🧘", "doneDaysAgo": [0, 1]},
+  {"id": 5, "name": "Journal", "emoji": "✏", "doneDaysAgo": [3, 4, 5]}
+]

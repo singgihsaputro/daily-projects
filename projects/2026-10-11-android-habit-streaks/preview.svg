@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640" font-family="sans-serif">
+  <rect width="360" height="640" fill="#fafdfc"/>
+  <rect width="360" height="56" fill="#fafdfc"/>
+  <text x="16" y="36" font-size="20" fill="#1c1b1f">Habit Streaks</text>
+  <text x="16" y="86" font-size="15" fill="#1c1b1f">3 of 5 done today</text>
+  <g id="card">
+    <rect x="16" y="100" width="328" height="104" rx="12" fill="#eef3f2" stroke="#d5dfdd"/>
+    <text x="30" y="138" font-size="26">💧</text>
+    <text x="68" y="128" font-size="15" fill="#1c1b1f">Drink water</text>
+    <text x="68" y="146" font-size="12" fill="#f57c00">🔥 7 day streak · best 7</text>
+    <g fill="#00796b"><circle cx="40" cy="178" r="14"/><circle cx="90" cy="178" r="14"/><circle cx="140" cy="178" r="14"/><circle cx="190" cy="178" r="14"/><circle cx="240" cy="178" r="14"/><circle cx="290" cy="178" r="14"/><circle cx="326" cy="178" r="0"/></g>
+    <circle cx="326" cy="178" r="14" fill="#00796b"/>
+  </g>
+  <rect x="16" y="216" width="328" height="104" rx="12" fill="#eef3f2" stroke="#d5dfdd"/>
+  <text x="30" y="254" font-size="26">📖</text>
+  <text x="68" y="244" font-size="15" fill="#1c1b1f">Read 20 pages</text>
+  <text x="68" y="262" font-size="12" fill="#f57c00">🔥 3 day streak · best 3</text>
+  <g fill="#00796b"><circle cx="40" cy="294" r="14" fill="#dde5e3"/><circle cx="90" cy="294" r="14"/><circle cx="140" cy="294" r="14" fill="#dde5e3"/><circle cx="190" cy="294" r="14"/><circle cx="240" cy="294" r="14"/><circle cx="290" cy="294" r="14"/></g>
+  <circle cx="326" cy="294" r="14" fill="#dde5e3"/>
+  <rect x="16" y="332" width="328" height="104" rx="12" fill="#eef3f2" stroke="#d5dfdd"/>
+  <text x="30" y="370" font-size="26">🏃</text>
+  <text x="68" y="360" font-size="15" fill="#1c1b1f">Morning run</text>
+  <text x="68" y="378" font-size="12" fill="#f57c00">🔥 1 day streak · best 1</text>
+  <g fill="#dde5e3"><circle cx="40" cy="410" r="14"/><circle cx="90" cy="410" r="14"/><circle cx="140" cy="410" r="14"/><circle cx="190" cy="410" r="14"/><circle cx="240" cy="410" r="14"/><circle cx="290" cy="410" r="14"/></g>
+  <circle cx="326" cy="410" r="14" fill="#00796b"/>
+  <text x="16" y="470" font-size="11" fill="#777">UI mockup — not a screenshot</text>
+</svg>

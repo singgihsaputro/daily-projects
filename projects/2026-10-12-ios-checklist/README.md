@@ -33,3 +33,5 @@ On Linux, `swift test` fails to build the `Checklist` UI target (`no such module
 - Changes are held in memory only; nothing is saved between launches.
 
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

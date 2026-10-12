@@ -1,0 +1,40 @@
+{
+  "checklists": [
+    {
+      "id": "weekend-trip",
+      "title": "Weekend trip",
+      "items": [
+        "Passport or ID",
+        "Phone charger",
+        "Toothbrush and toiletries",
+        "Two changes of clothes",
+        "Medication",
+        "Water bottle"
+      ]
+    },
+    {
+      "id": "moving-day",
+      "title": "Moving day",
+      "items": [
+        "Label every box by room",
+        "Photograph meter readings",
+        "Return the old keys",
+        "Pack an essentials bag",
+        "Forward the mail",
+        "Final sweep of every cupboard",
+        "Take photos of the empty rooms"
+      ]
+    },
+    {
+      "id": "morning-routine",
+      "title": "Leave the house",
+      "items": [
+        "Keys",
+        "Wallet",
+        "Phone",
+        "Windows closed",
+        "Stove off"
+      ]
+    }
+  ]
+}

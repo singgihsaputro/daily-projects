@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="780" viewBox="0 0 390 780" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <rect width="390" height="780" fill="#f2f2f7"/>
+  <text x="195" y="62" font-size="15" font-weight="600" fill="#007aff" text-anchor="middle">Weekend trip ⌄</text>
+  <text x="358" y="62" font-size="15" fill="#007aff" text-anchor="end">Reset</text>
+  <text x="20" y="110" font-size="32" font-weight="700">Checklist</text>
+  <rect x="16" y="130" width="358" height="76" rx="12" fill="#fff"/>
+  <text x="32" y="163" font-size="16" font-weight="600">3 of 6 done</text>
+  <rect x="32" y="177" width="326" height="8" rx="4" fill="#e5e5ea"/>
+  <rect x="32" y="177" width="163" height="8" rx="4" fill="#007aff"/>
+  <text x="32" y="240" font-size="12" fill="#6c6c70">WEEKEND TRIP</text>
+  <rect x="16" y="250" width="358" height="312" rx="12" fill="#fff"/>
+  <circle cx="40" cy="276" r="11" fill="#34c759"/><text x="64" y="282" font-size="16" fill="#8e8e93" text-decoration="line-through">Passport or ID</text>
+  <line x1="60" y1="302" x2="374" y2="302" stroke="#e5e5ea"/>
+  <circle cx="40" cy="328" r="11" fill="#34c759"/><text x="64" y="334" font-size="16" fill="#8e8e93" text-decoration="line-through">Phone charger</text>
+  <line x1="60" y1="354" x2="374" y2="354" stroke="#e5e5ea"/>
+  <circle cx="40" cy="380" r="11" fill="none" stroke="#c7c7cc" stroke-width="2"/><text x="64" y="386" font-size="16">Toothbrush and toiletries</text>
+  <line x1="60" y1="406" x2="374" y2="406" stroke="#e5e5ea"/>
+  <circle cx="40" cy="432" r="11" fill="#34c759"/><text x="64" y="438" font-size="16" fill="#8e8e93" text-decoration="line-through">Two changes of clothes</text>
+  <line x1="60" y1="458" x2="374" y2="458" stroke="#e5e5ea"/>
+  <circle cx="40" cy="484" r="11" fill="none" stroke="#c7c7cc" stroke-width="2"/><text x="64" y="490" font-size="16">Medication</text>
+  <line x1="60" y1="510" x2="374" y2="510" stroke="#e5e5ea"/>
+  <circle cx="40" cy="536" r="11" fill="none" stroke="#c7c7cc" stroke-width="2"/><text x="64" y="542" font-size="16">Water bottle</text>
+  <rect x="16" y="582" width="358" height="48" rx="12" fill="#fff"/>
+  <text x="32" y="612" font-size="16" fill="#c7c7cc">Add an item</text>
+  <text x="358" y="612" font-size="16" fill="#c7c7cc" text-anchor="end">Add</text>
+  <text x="195" y="765" font-size="11" fill="#8e8e93" text-anchor="middle">UI mockup — hand-drawn, not a screenshot</text>
+</svg>

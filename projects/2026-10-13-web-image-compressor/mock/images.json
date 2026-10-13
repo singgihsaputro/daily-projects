@@ -1,0 +1,5 @@
+[
+  { "id": "sunset", "name": "sunset.png", "url": "/samples/sunset.png", "caption": "Warm abstract, 1600×1200" },
+  { "id": "forest", "name": "forest.png", "url": "/samples/forest.png", "caption": "Green abstract, 1600×1200" },
+  { "id": "harbor", "name": "harbor.png", "url": "/samples/harbor.png", "caption": "Blue abstract, 1600×1200" }
+]

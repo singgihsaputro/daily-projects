@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="482" font-family="monospace" font-size="13"><rect width="960" height="482" rx="8" fill="#14161c"/><text x="16" y="24" fill="#8b93a7">Captured output of the running sleep-log server (cargo run --release)</text>
+<text x="16" y="48" fill="#7ee787" xml:space="preserve">$ curl -s localhost:3000/health</text>
+<text x="16" y="65" fill="#e6e6e6" xml:space="preserve">{"status":"ok"}</text>
+<text x="16" y="82" fill="#7ee787" xml:space="preserve">$ curl -s "localhost:3000/summary?days=7"</text>
+<text x="16" y="99" fill="#e6e6e6" xml:space="preserve">{"nights":7,"from":"2026-10-06","to":"2026-10-12","avg_minutes":445,"avg_duration":"7h 25m","avg_quality":3.7,"sleep_d</text>
+<text x="16" y="116" fill="#e6e6e6" xml:space="preserve">  ebt_minutes":265,"bedtime_spread_minutes":49}</text>
+<text x="16" y="133" fill="#7ee787" xml:space="preserve">$ curl -s localhost:3000/entries/5</text>
+<text x="16" y="150" fill="#e6e6e6" xml:space="preserve">{"id":5,"date":"2026-10-10","bedtime":"01:15","wake":"09:00","quality":4,"note":"Weekend lie-in","minutes":465,"durati</text>
+<text x="16" y="167" fill="#e6e6e6" xml:space="preserve">  on":"7h 45m"}</text>
+<text x="16" y="184" fill="#7ee787" xml:space="preserve">$ curl -si -X POST localhost:3000/entries -d {2026-10-13 23:15-06:55 q4}</text>
+<text x="16" y="201" fill="#ffa657" xml:space="preserve">HTTP/1.1 201 Created</text>
+<text x="16" y="218" fill="#e6e6e6" xml:space="preserve">{"id":8,"date":"2026-10-13","bedtime":"23:15","wake":"06:55","quality":4,"note":"Read before bed","minutes":460,"durat</text>
+<text x="16" y="235" fill="#e6e6e6" xml:space="preserve">  ion":"7h 40m"}</text>
+<text x="16" y="252" fill="#e6e6e6" xml:space="preserve"></text>
+<text x="16" y="269" fill="#7ee787" xml:space="preserve">$ same POST again</text>
+<text x="16" y="286" fill="#ffa657" xml:space="preserve">HTTP/1.1 409 Conflict</text>
+<text x="16" y="303" fill="#e6e6e6" xml:space="preserve">{"error":"an entry for that date already exists"}</text>
+<text x="16" y="320" fill="#e6e6e6" xml:space="preserve"></text>
+<text x="16" y="337" fill="#7ee787" xml:space="preserve">$ POST quality 9</text>
+<text x="16" y="354" fill="#ffa657" xml:space="preserve">HTTP/1.1 422 Unprocessable Entity</text>
+<text x="16" y="371" fill="#e6e6e6" xml:space="preserve">{"error":"quality must be between 1 and 5"}</text>
+<text x="16" y="388" fill="#e6e6e6" xml:space="preserve"></text>
+<text x="16" y="405" fill="#7ee787" xml:space="preserve">$ DELETE /entries/1</text>
+<text x="16" y="422" fill="#e6e6e6" xml:space="preserve">204</text>
+<text x="16" y="439" fill="#7ee787" xml:space="preserve">$ summary?days=0</text>
+<text x="16" y="456" fill="#e6e6e6" xml:space="preserve">{"error":"days must be between 1 and 365"}</text>
+<text x="16" y="473" fill="#e6e6e6" xml:space="preserve"></text>
+</svg>

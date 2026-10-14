@@ -1,0 +1,9 @@
+[
+  {"id":1,"date":"2026-10-06","bedtime":"23:10","wake":"06:40","quality":4,"note":"Quiet night"},
+  {"id":2,"date":"2026-10-07","bedtime":"00:30","wake":"06:45","quality":2,"note":"Late coffee"},
+  {"id":3,"date":"2026-10-08","bedtime":"23:00","wake":"07:00","quality":5,"note":""},
+  {"id":4,"date":"2026-10-09","bedtime":"23:45","wake":"06:30","quality":3,"note":"Woke up twice"},
+  {"id":5,"date":"2026-10-10","bedtime":"01:15","wake":"09:00","quality":4,"note":"Weekend lie-in"},
+  {"id":6,"date":"2026-10-11","bedtime":"22:50","wake":"07:15","quality":5,"note":"Early night"},
+  {"id":7,"date":"2026-10-12","bedtime":"23:20","wake":"06:40","quality":3,"note":""}
+]

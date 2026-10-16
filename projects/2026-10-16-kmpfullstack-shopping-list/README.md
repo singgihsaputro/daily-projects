@@ -90,3 +90,5 @@ $ curl "localhost:8080/items?category=Produce"            -> only "Cherry tomato
 - The web client needs the two terminals above; the API allows any origin (CORS `anyHost`), which is fine for local dev only.
 
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

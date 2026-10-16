@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Oat milk", "quantity": 2, "category": "dairy", "checked": false, "createdAtEpochSeconds": 1760600000 },
+  { "id": 2, "name": "Sourdough loaf", "quantity": 1, "category": "bakery", "checked": false, "createdAtEpochSeconds": 1760600100 },
+  { "id": 3, "name": "Bananas", "quantity": 6, "category": "produce", "checked": true, "createdAtEpochSeconds": 1760600200 },
+  { "id": 4, "name": "Cherry tomatoes", "quantity": 1, "category": "produce", "checked": false, "createdAtEpochSeconds": 1760600300 },
+  { "id": 5, "name": "Dish soap", "quantity": 1, "category": "household", "checked": false, "createdAtEpochSeconds": 1760600400 }
+]

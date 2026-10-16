@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Shopping list</title>
+    <style>
+        body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; color: #1b2a1f; }
+        h1 { margin-bottom: 4px; }
+        .hint { color: #666; font-size: 0.85rem; margin-bottom: 20px; }
+        form { display: grid; grid-template-columns: 1fr 90px; gap: 8px; margin-bottom: 8px; }
+        input { padding: 8px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; }
+        button { padding: 6px 14px; font-size: 0.95rem; border: none; border-radius: 6px; background: #2e7d32; color: white; cursor: pointer; }
+        button:hover { background: #1b5e20; }
+        .error { color: #c62828; min-height: 1.2em; margin: 4px 0 8px; }
+        #category-filter { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+        .chip { background: #e8f5e9; color: #2e7d32; border-radius: 16px; }
+        .chip:hover { background: #c8e6c9; }
+        .chip.active { background: #2e7d32; color: white; }
+        ul { list-style: none; padding: 0; }
+        li { display: flex; align-items: center; gap: 10px; border-bottom: 1px solid #eee; padding: 10px 0; }
+        li .text { flex: 1; }
+        .name { font-weight: bold; }
+        .category { color: #888; font-size: 0.85rem; }
+        li.done .name { text-decoration: line-through; color: #999; }
+        .check-btn { background: transparent; color: #2e7d32; font-size: 1.3rem; padding: 0 6px; }
+        .check-btn:hover { background: #e8f5e9; }
+        .delete-btn { background: #c62828; }
+        .delete-btn:hover { background: #8e0000; }
+        #clear-btn { background: #455a64; display: none; }
+    </style>
+</head>
+<body>
+    <h1>Shopping list</h1>
+    <p class="hint">Talks to the real Ktor server at <code>http://localhost:8080</code> — start it with <code>./gradlew :server:run</code>.</p>
+    <form id="create-form">
+        <input type="text" id="name-input" placeholder="Item, e.g. Oat milk" />
+        <input type="number" id="quantity-input" value="1" min="1" max="99" />
+        <input type="text" id="category-input" placeholder="Category (optional)" />
+        <button type="submit">Add item</button>
+    </form>
+    <div class="error" id="error"></div>
+    <div id="category-filter"></div>
+    <ul id="item-list"></ul>
+    <button id="clear-btn">Clear ticked items</button>
+    <script src="shoppinglist-web.js"></script>
+</body>
+</html>

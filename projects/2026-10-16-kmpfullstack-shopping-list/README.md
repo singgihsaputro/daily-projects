@@ -88,3 +88,5 @@ $ curl "localhost:8080/items?category=Produce"            -> only "Cherry tomato
 - "Shared" means every client sees the same server-side list on refresh; there is no push or live sync between devices.
 - Persistence is in-memory: restarting the server resets to the seed file. No auth, no pagination.
 - The web client needs the two terminals above; the API allows any origin (CORS `anyHost`), which is fine for local dev only.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

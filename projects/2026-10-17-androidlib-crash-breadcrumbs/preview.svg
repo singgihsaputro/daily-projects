@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640" font-family="sans-serif">
+  <rect width="360" height="640" fill="#fffbfe"/>
+  <text x="16" y="48" font-size="24" fill="#1c1b1f">Crash breadcrumbs</text>
+  <rect x="16" y="68" width="150" height="40" rx="20" fill="#6750a4"/>
+  <text x="91" y="93" font-size="14" fill="#fff" text-anchor="middle">Replay next step</text>
+  <rect x="176" y="68" width="110" height="40" rx="20" fill="none" stroke="#79747e"/>
+  <text x="231" y="93" font-size="14" fill="#6750a4" text-anchor="middle">Crash now</text>
+  <text x="16" y="142" font-size="16" fill="#1c1b1f">Trail</text>
+  <g font-family="monospace" font-size="9" fill="#1c1b1f">
+    <text x="16" y="164">2026-10-17T09:30:05.120Z INFO  [app] cold start</text>
+    <text x="16" y="180">2026-10-17T09:30:06.002Z INFO  [nav] opened Home</text>
+    <text x="16" y="196">2026-10-17T09:30:06.410Z DEBUG [network] GET /products -&gt; 200</text>
+    <text x="16" y="212">2026-10-17T09:30:08.775Z INFO  [nav] opened Cart</text>
+    <text x="16" y="228">2026-10-17T09:30:10.031Z INFO  [cart] added 'Kopi Gayo 250g' x2</text>
+    <text x="16" y="244">2026-10-17T09:30:12.560Z WARN  [network] POST /checkout -&gt; 503</text>
+    <text x="16" y="260">2026-10-17T09:30:13.904Z ERROR [pay] tapped Pay with empty address</text>
+  </g>
+  <text x="16" y="302" font-size="16" fill="#1c1b1f">Report from previous launch</text>
+  <rect x="16" y="314" width="328" height="130" rx="8" fill="#f3edf7"/>
+  <g font-family="monospace" font-size="9" fill="#1c1b1f">
+    <text x="26" y="334">Crash on thread 'main'</text>
+    <text x="26" y="354">java.lang.IllegalStateException: Simulated checkout crash</text>
+    <text x="26" y="370">  at ...MainActivity$Screen...</text>
+    <text x="26" y="394">Breadcrumbs (oldest first):</text>
+    <text x="26" y="410">... [cart] added 'Kopi Gayo 250g' x2</text>
+    <text x="26" y="426">... [pay] about to crash on purpose</text>
+  </g>
+  <rect x="16" y="458" width="90" height="36" rx="18" fill="none" stroke="#79747e"/>
+  <text x="61" y="481" font-size="14" fill="#6750a4" text-anchor="middle">Dismiss</text>
+  <text x="180" y="620" font-size="11" fill="#79747e" text-anchor="middle">UI mockup — hand-drawn, not a screenshot</text>
+</svg>

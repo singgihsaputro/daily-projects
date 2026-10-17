@@ -1,0 +1,9 @@
+[
+  {"category": "app", "message": "cold start", "level": "INFO"},
+  {"category": "nav", "message": "opened Home", "level": "INFO"},
+  {"category": "network", "message": "GET /products -> 200 (143 ms)", "level": "DEBUG"},
+  {"category": "nav", "message": "opened Cart", "level": "INFO"},
+  {"category": "cart", "message": "added 'Kopi Gayo 250g' x2", "level": "INFO"},
+  {"category": "network", "message": "POST /checkout -> 503 (2010 ms)", "level": "WARN"},
+  {"category": "pay", "message": "tapped Pay with empty address", "level": "ERROR"}
+]

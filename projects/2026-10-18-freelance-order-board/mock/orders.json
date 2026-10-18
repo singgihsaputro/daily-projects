@@ -1,0 +1,14 @@
+[
+  { "id": 101, "table": "T4", "status": "new", "placedMinutesAgo": 2, "note": "Allergy: peanuts",
+    "items": [ { "name": "Nasi Goreng", "qty": 2 }, { "name": "Es Teh", "qty": 2 } ] },
+  { "id": 102, "table": "T9", "status": "new", "placedMinutesAgo": 5, "note": "",
+    "items": [ { "name": "Soto Ayam", "qty": 1 }, { "name": "Kerupuk", "qty": 1 } ] },
+  { "id": 103, "table": "Takeaway", "status": "preparing", "placedMinutesAgo": 11, "note": "Pick-up at 19:30",
+    "items": [ { "name": "Sate Ayam (10)", "qty": 3 }, { "name": "Lontong", "qty": 3 } ] },
+  { "id": 104, "table": "T2", "status": "preparing", "placedMinutesAgo": 18, "note": "",
+    "items": [ { "name": "Gado-Gado", "qty": 1 }, { "name": "Mie Goreng", "qty": 1 }, { "name": "Jeruk Hangat", "qty": 2 } ] },
+  { "id": 105, "table": "T7", "status": "ready", "placedMinutesAgo": 14, "note": "Extra sambal",
+    "items": [ { "name": "Ayam Bakar", "qty": 2 }, { "name": "Nasi Putih", "qty": 2 } ] },
+  { "id": 106, "table": "T1", "status": "served", "placedMinutesAgo": 32, "note": "",
+    "items": [ { "name": "Rendang", "qty": 1 }, { "name": "Nasi Putih", "qty": 1 } ] }
+]

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="720" viewBox="0 0 360 720" font-family="Roboto, Arial, sans-serif">
+  <rect width="360" height="720" fill="#FFFBFF"/>
+  <rect width="360" height="64" fill="#FFFBFF"/>
+  <text x="16" y="40" font-size="22" fill="#1F1B1A">Caffeine Tracker</text>
+  <rect x="16" y="80" width="328" height="132" rx="12" fill="#EFE0DA"/>
+  <text x="32" y="116" font-size="22" fill="#1F1B1A">155 mg in your system</text>
+  <text x="32" y="142" font-size="14" fill="#1F1B1A">Sleep-safe in 8h 11m</text>
+  <rect x="32" y="158" width="296" height="6" rx="3" fill="#D7C2BB"/>
+  <rect x="32" y="158" width="194" height="6" rx="3" fill="#6D4C41"/>
+  <text x="32" y="188" font-size="12" fill="#52443F">262 / 400 mg today</text>
+  <text x="16" y="248" font-size="16" fill="#1F1B1A">Quick add</text>
+  <g font-size="12" fill="#1F1B1A">
+    <rect x="16" y="262" width="128" height="32" rx="8" fill="none" stroke="#85736E"/><text x="28" y="283">Espresso 64 mg</text>
+    <rect x="152" y="262" width="144" height="32" rx="8" fill="none" stroke="#85736E"/><text x="164" y="283">Drip coffee 95 mg</text>
+    <rect x="304" y="262" width="56" height="32" rx="8" fill="none" stroke="#85736E"/><text x="314" y="283">Latte…</text>
+  </g>
+  <text x="16" y="334" font-size="16" fill="#1F1B1A">Today</text>
+  <g fill="#1F1B1A">
+    <text x="16" y="368" font-size="16">Latte</text><text x="16" y="388" font-size="12" fill="#52443F">75 mg · 0h 45m ago</text><text x="290" y="378" font-size="14" fill="#6D4C41">Remove</text>
+    <text x="16" y="428" font-size="16">Green tea</text><text x="16" y="448" font-size="12" fill="#52443F">28 mg · 2h 30m ago</text><text x="290" y="438" font-size="14" fill="#6D4C41">Remove</text>
+    <text x="16" y="488" font-size="16">Espresso</text><text x="16" y="508" font-size="12" fill="#52443F">64 mg · 5h 0m ago</text><text x="290" y="498" font-size="14" fill="#6D4C41">Remove</text>
+    <text x="16" y="548" font-size="16">Drip coffee</text><text x="16" y="568" font-size="12" fill="#52443F">95 mg · 7h 0m ago</text><text x="290" y="558" font-size="14" fill="#6D4C41">Remove</text>
+  </g>
+  <text x="180" y="705" font-size="11" fill="#85736E" text-anchor="middle">UI mockup — not a screenshot</text>
+</svg>

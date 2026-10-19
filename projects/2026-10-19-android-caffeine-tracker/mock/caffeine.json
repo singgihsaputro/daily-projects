@@ -1,0 +1,18 @@
+{
+  "dailyLimitMg": 400,
+  "drinks": [
+    {"id": "espresso", "name": "Espresso", "mg": 64},
+    {"id": "drip", "name": "Drip coffee", "mg": 95},
+    {"id": "latte", "name": "Latte", "mg": 75},
+    {"id": "black-tea", "name": "Black tea", "mg": 47},
+    {"id": "green-tea", "name": "Green tea", "mg": 28},
+    {"id": "cola", "name": "Cola", "mg": 34},
+    {"id": "energy", "name": "Energy drink", "mg": 80}
+  ],
+  "log": [
+    {"drinkId": "drip", "minutesAgo": 420},
+    {"drinkId": "espresso", "minutesAgo": 300},
+    {"drinkId": "green-tea", "minutesAgo": 150},
+    {"drinkId": "latte", "minutesAgo": 45}
+  ]
+}

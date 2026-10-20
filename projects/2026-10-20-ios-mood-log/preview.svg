@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="780" viewBox="0 0 390 780" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <rect width="390" height="780" fill="#f2f2f7"/>
+  <text x="20" y="100" font-size="32" font-weight="700">Mood Log</text>
+  <rect x="16" y="120" width="358" height="80" rx="12" fill="#fff"/>
+  <text x="76" y="156" font-size="22" font-weight="700" text-anchor="middle">3.5</text><text x="76" y="180" font-size="12" fill="#6c6c70" text-anchor="middle">average</text>
+  <text x="195" y="156" font-size="22" font-weight="700" text-anchor="middle">6</text><text x="195" y="180" font-size="12" fill="#6c6c70" text-anchor="middle">day streak</text>
+  <text x="314" y="156" font-size="22" text-anchor="middle">😄</text><text x="314" y="180" font-size="12" fill="#6c6c70" text-anchor="middle">best day</text>
+  <text x="32" y="230" font-size="12" fill="#6c6c70">HOW ARE YOU TODAY?</text>
+  <rect x="16" y="240" width="358" height="170" rx="12" fill="#fff"/>
+  <text x="59" y="288" font-size="30" text-anchor="middle">😞</text><text x="59" y="308" font-size="11" text-anchor="middle">Awful</text>
+  <text x="125" y="288" font-size="30" text-anchor="middle">🙁</text><text x="125" y="308" font-size="11" text-anchor="middle">Low</text>
+  <text x="191" y="288" font-size="30" text-anchor="middle">😐</text><text x="191" y="308" font-size="11" text-anchor="middle">Okay</text>
+  <rect x="226" y="252" width="62" height="64" rx="10" fill="#007aff" fill-opacity="0.2"/>
+  <text x="257" y="288" font-size="30" text-anchor="middle">🙂</text><text x="257" y="308" font-size="11" text-anchor="middle">Good</text>
+  <text x="323" y="288" font-size="30" text-anchor="middle">😄</text><text x="323" y="308" font-size="11" text-anchor="middle">Great</text>
+  <text x="32" y="344" font-size="16" fill="#c7c7cc">A note about today (optional)</text>
+  <line x1="32" y1="356" x2="358" y2="356" stroke="#e5e5ea"/>
+  <rect x="32" y="368" width="120" height="34" rx="8" fill="#007aff"/><text x="92" y="391" font-size="15" font-weight="600" fill="#fff" text-anchor="middle">Save today</text>
+  <text x="32" y="446" font-size="12" fill="#6c6c70">HISTORY</text>
+  <rect x="16" y="456" width="358" height="290" rx="12" fill="#fff"/>
+  <text x="32" y="496" font-size="26">🙂</text><text x="76" y="490" font-size="16" font-weight="600">2026-10-19</text><text x="76" y="510" font-size="14" fill="#6c6c70">Cooked a proper dinner.</text>
+  <line x1="76" y1="524" x2="374" y2="524" stroke="#e5e5ea"/>
+  <text x="32" y="554" font-size="26">😄</text><text x="76" y="548" font-size="16" font-weight="600">2026-10-18</text><text x="76" y="568" font-size="14" fill="#6c6c70">Long walk with friends.</text>
+  <line x1="76" y1="582" x2="374" y2="582" stroke="#e5e5ea"/>
+  <text x="32" y="612" font-size="26">😐</text><text x="76" y="606" font-size="16" font-weight="600">2026-10-17</text><text x="76" y="626" font-size="14" fill="#6c6c70">Quiet errands.</text>
+  <line x1="76" y1="640" x2="374" y2="640" stroke="#e5e5ea"/>
+  <text x="32" y="670" font-size="26">🙁</text><text x="76" y="664" font-size="16" font-weight="600">2026-10-16</text><text x="76" y="684" font-size="14" fill="#6c6c70">Rainy and tired.</text>
+  <line x1="76" y1="698" x2="374" y2="698" stroke="#e5e5ea"/>
+  <text x="195" y="768" font-size="11" fill="#8e8e93" text-anchor="middle">UI mockup — hand-drawn, not a screenshot</text>
+</svg>

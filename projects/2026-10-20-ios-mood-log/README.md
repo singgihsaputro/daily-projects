@@ -33,3 +33,5 @@ On Linux, `swift test` fails to build the `MoodLog` UI target (`no such module '
 - Entries are held in memory only; nothing is saved between launches. Days are computed in UTC.
 
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

@@ -1,0 +1,9 @@
+[
+  { "id": "r1", "name": "Veggie Omelette", "kcal": 320, "ingredients": [["eggs", 3, "pcs"], ["spinach", 50, "g"], ["tomato", 1, "pcs"]] },
+  { "id": "r2", "name": "Chicken Rice Bowl", "kcal": 640, "ingredients": [["chicken breast", 150, "g"], ["rice", 90, "g"], ["broccoli", 100, "g"]] },
+  { "id": "r3", "name": "Tomato Pasta", "kcal": 560, "ingredients": [["pasta", 100, "g"], ["tomato", 3, "pcs"], ["garlic", 2, "cloves"]] },
+  { "id": "r4", "name": "Lentil Soup", "kcal": 410, "ingredients": [["lentils", 120, "g"], ["carrot", 2, "pcs"], ["garlic", 2, "cloves"]] },
+  { "id": "r5", "name": "Salmon & Greens", "kcal": 590, "ingredients": [["salmon fillet", 160, "g"], ["spinach", 80, "g"], ["rice", 70, "g"]] },
+  { "id": "r6", "name": "Fried Rice", "kcal": 520, "ingredients": [["rice", 120, "g"], ["eggs", 2, "pcs"], ["carrot", 1, "pcs"], ["garlic", 1, "cloves"]] },
+  { "id": "r7", "name": "Oat Porridge", "kcal": 280, "ingredients": [["oats", 60, "g"], ["banana", 1, "pcs"]] }
+]

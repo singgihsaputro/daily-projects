@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="436" viewBox="0 0 900 436"><rect width="900" height="436" rx="8" fill="#1e1e2e"/>
+<text x="16" y="30" font-family="monospace" font-size="12" fill="#a6e3a1" xml:space="preserve">$ curl -s -w ' [%{http_code}]' 'localhost:8099/api/convert?from=USD&amp;to=JPY&amp;amount=250'</text>
+<text x="16" y="48" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">{"from":"USD","to":"JPY","amount":250,"rate":151.42,"result":37855,"asOf":"2026-10-21"}</text>
+<text x="16" y="66" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve"> [200]</text>
+<text x="16" y="84" font-family="monospace" font-size="12" fill="#a6e3a1" xml:space="preserve">$ curl -s -w ' [%{http_code}]' 'localhost:8099/api/convert?from=GBP&amp;to=IDR&amp;amount=19.99'</text>
+<text x="16" y="102" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">{"from":"GBP","to":"IDR","amount":19.99,"rate":20230.241883326864,"result":404403,"asOf":"2026-10-21"}</text>
+<text x="16" y="120" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve"> [200]</text>
+<text x="16" y="138" font-family="monospace" font-size="12" fill="#a6e3a1" xml:space="preserve">$ curl -s -w ' [%{http_code}]' 'localhost:8099/api/rates?base=EUR'</text>
+<text x="16" y="156" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">{"asOf":"2026-10-</text>
+<text x="16" y="174" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">  21","base":"EUR","rates":{"AUD":1.6591057087041459,"CAD":1.507705665291947,"CHF":0.9512698068157152,"EUR":1,"GBP":0.</text>
+<text x="16" y="192" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">  8390492728456697,"IDR":16974.169741697417,"JPY":164.33687866290427,"KWD":0.33329715650097674,"SGD":1.456262209680920</text>
+<text x="16" y="210" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">  3,"USD":1.085304970696766}}</text>
+<text x="16" y="228" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve"> [200]</text>
+<text x="16" y="246" font-family="monospace" font-size="12" fill="#a6e3a1" xml:space="preserve">$ curl -s -w ' [%{http_code}]' 'localhost:8099/api/convert?from=USD&amp;to=XXX&amp;amount=1'</text>
+<text x="16" y="264" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">{"error":"unknown currency \"XXX\""}</text>
+<text x="16" y="282" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve"> [404]</text>
+<text x="16" y="300" font-family="monospace" font-size="12" fill="#a6e3a1" xml:space="preserve">$ curl -s -w ' [%{http_code}]' 'localhost:8099/api/convert?from=USD&amp;to=EUR&amp;amount=abc'</text>
+<text x="16" y="318" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">{"error":"amount must be a non-negative number"}</text>
+<text x="16" y="336" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve"> [400]</text>
+<text x="16" y="354" font-family="monospace" font-size="12" fill="#a6e3a1" xml:space="preserve">$ curl -s -X POST localhost:8099/api/convert/batch -d '{"from":"USD","amount":100,"targets":["EUR","KWD"]}'</text>
+<text x="16" y="372" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">{"results":[{"from":"USD","to":"EUR","amount":100,"rate":0.9214,"result":92.14,"asOf":"2026-10-</text>
+<text x="16" y="390" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve">  21"},{"from":"USD","to":"KWD","amount":100,"rate":0.3071,"result":30.71,"asOf":"2026-10-21"}]}</text>
+<text x="16" y="408" font-family="monospace" font-size="12" fill="#cdd6f4" xml:space="preserve"> [200]</text>
+</svg>

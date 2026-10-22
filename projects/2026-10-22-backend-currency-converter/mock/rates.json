@@ -1,0 +1,16 @@
+{
+  "base": "USD",
+  "asOf": "2026-10-21",
+  "currencies": [
+    {"code": "USD", "name": "US Dollar", "decimals": 2, "perBase": 1},
+    {"code": "EUR", "name": "Euro", "decimals": 2, "perBase": 0.9214},
+    {"code": "GBP", "name": "British Pound", "decimals": 2, "perBase": 0.7731},
+    {"code": "JPY", "name": "Japanese Yen", "decimals": 0, "perBase": 151.42},
+    {"code": "IDR", "name": "Indonesian Rupiah", "decimals": 0, "perBase": 15640},
+    {"code": "AUD", "name": "Australian Dollar", "decimals": 2, "perBase": 1.5287},
+    {"code": "CAD", "name": "Canadian Dollar", "decimals": 2, "perBase": 1.3892},
+    {"code": "CHF", "name": "Swiss Franc", "decimals": 2, "perBase": 0.8765},
+    {"code": "SGD", "name": "Singapore Dollar", "decimals": 2, "perBase": 1.3418},
+    {"code": "KWD", "name": "Kuwaiti Dinar", "decimals": 3, "perBase": 0.3071}
+  ]
+}

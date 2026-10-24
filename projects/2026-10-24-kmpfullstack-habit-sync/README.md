@@ -89,3 +89,5 @@ HTTP/1.1 404 Not Found { "message": "No habit with id 99" }
 - The server judges "today" in its own time zone for the future-date check, while each client picks its own local day; near midnight across zones a client can be refused a date that is still "today" for it.
 - Persistence is in-memory: restarting the server resets to the seed file. No auth, no per-user data.
 - The web client needs the two terminals above; the API allows any origin (CORS `anyHost`), which is fine for local dev only.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

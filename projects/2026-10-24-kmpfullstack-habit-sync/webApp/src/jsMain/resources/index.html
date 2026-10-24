@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Habit sync</title>
+    <style>
+        body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; color: #2b1d14; background: #fffaf5; }
+        h1 { margin-bottom: 4px; }
+        .hint { color: #777; font-size: 0.85rem; margin-bottom: 20px; }
+        form { display: grid; grid-template-columns: 1fr 90px auto; gap: 8px; margin-bottom: 8px; }
+        input { padding: 8px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; }
+        button { padding: 6px 14px; font-size: 0.95rem; border: none; border-radius: 6px; background: #e65100; color: white; cursor: pointer; }
+        button:hover { background: #bf360c; }
+        .error { color: #c62828; min-height: 1.2em; margin: 4px 0 8px; }
+        ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+        .card { background: white; border: 1px solid #f0e2d6; border-radius: 12px; padding: 14px 16px; }
+        .head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .name { font-weight: bold; font-size: 1.05rem; }
+        .badge { background: #fbe9e7; color: #bf360c; border-radius: 12px; padding: 2px 10px; font-size: 0.85rem; }
+        .badge.met { background: #e0f2f1; color: #00695c; }
+        .week { display: flex; gap: 8px; }
+        .dot { width: 36px; height: 36px; padding: 0; border-radius: 50%; background: #f3e9e0; color: #8d6e63; font-weight: bold; }
+        .dot:hover { background: #ffccbc; }
+        .dot.done { background: #e65100; color: white; }
+        .foot { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; color: #777; font-size: 0.85rem; }
+        .delete-btn { background: transparent; color: #c62828; padding: 2px 8px; }
+        .delete-btn:hover { background: #ffebee; }
+    </style>
+</head>
+<body>
+    <h1>Habit sync</h1>
+    <p class="hint">Talks to the real Ktor server at <code>http://localhost:8080</code> — start it with <code>./gradlew :server:run</code>. Click a day to tick or un-tick it.</p>
+    <form id="create-form">
+        <input type="text" id="name-input" placeholder="New habit, e.g. Meditate" />
+        <input type="number" id="goal-input" value="7" min="1" max="7" title="Days per week" />
+        <button type="submit">Add habit</button>
+    </form>
+    <div class="error" id="error"></div>
+    <ul id="habit-list"></ul>
+    <script src="habitsync-web.js"></script>
+</body>
+</html>

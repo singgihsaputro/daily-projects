@@ -93,3 +93,5 @@ HTTP/1.1 404 Not Found { "message": "No habit with id 99" }
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
 
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

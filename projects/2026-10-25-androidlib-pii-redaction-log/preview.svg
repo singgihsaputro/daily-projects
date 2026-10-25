@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640" font-family="sans-serif">
+<rect width="360" height="640" fill="#fffbfe"/>
+<text x="16" y="48" font-size="24" fill="#1c1b1f">RedactLog</text>
+<rect x="16" y="68" width="44" height="26" rx="13" fill="#6750a4"/><circle cx="47" cy="81" r="9" fill="#fff"/>
+<text x="72" y="86" font-size="14" fill="#1c1b1f">What logcat receives</text>
+<rect x="16" y="112" width="328" height="52" rx="12" fill="#f3edf7"/>
+<text x="26" y="143" font-family="monospace" font-size="9" fill="#1c1b1f">User signed in as [EMAIL] from 10.0.2.15</text>
+<rect x="16" y="174" width="328" height="52" rx="12" fill="#f3edf7"/>
+<text x="26" y="205" font-family="monospace" font-size="9" fill="#1c1b1f">OTP sent to [PHONE] (backup [PHONE])</text>
+<rect x="16" y="236" width="328" height="52" rx="12" fill="#f3edf7"/>
+<text x="26" y="267" font-family="monospace" font-size="9" fill="#1c1b1f">KYC submitted, NIK [NIK], name on file</text>
+<rect x="16" y="298" width="328" height="52" rx="12" fill="#f3edf7"/>
+<text x="26" y="329" font-family="monospace" font-size="9" fill="#1c1b1f">Charging card [CARD] for order #88231 (Rp 250.000)</text>
+<rect x="16" y="360" width="328" height="52" rx="12" fill="#f3edf7"/>
+<text x="26" y="391" font-family="monospace" font-size="9" fill="#1c1b1f">GET /v2/profile Authorization: Bearer [JWT]</text>
+<rect x="16" y="422" width="328" height="52" rx="12" fill="#f3edf7"/>
+<text x="26" y="453" font-family="monospace" font-size="9" fill="#1c1b1f">login failed: password=[SECRET]&amp;remember=true</text>
+<rect x="16" y="484" width="328" height="52" rx="12" fill="#f3edf7"/>
+<text x="26" y="515" font-family="monospace" font-size="9" fill="#1c1b1f">Retrying request id=5f2c order=12345678 (not a card, not a NIK)</text>
+</svg>

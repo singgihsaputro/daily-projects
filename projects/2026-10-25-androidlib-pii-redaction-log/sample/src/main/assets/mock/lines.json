@@ -1,0 +1,9 @@
+[
+  "User signed in as budi.santoso@example.co.id from 10.0.2.15",
+  "OTP sent to +62 812-3456-7890 (backup 081298765432)",
+  "KYC submitted, NIK 3174021203900001, name on file",
+  "Charging card 4111 1111 1111 1111 for order #88231 (Rp 250.000)",
+  "GET /v2/profile Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI0MiJ9.c2lnbmF0dXJl",
+  "login failed: password=hunter2&remember=true",
+  "Retrying request id=5f2c order=12345678 (not a card, not a NIK)"
+]

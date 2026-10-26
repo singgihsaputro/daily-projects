@@ -1,0 +1,110 @@
+[
+ {
+  "sku": "8991001",
+  "name": "Indomie Goreng",
+  "price": 3500,
+  "category": "Food"
+ },
+ {
+  "sku": "8991002",
+  "name": "Mie Sedaap Soto",
+  "price": 3300,
+  "category": "Food"
+ },
+ {
+  "sku": "8991003",
+  "name": "Roti Tawar Sari",
+  "price": 16500,
+  "category": "Food"
+ },
+ {
+  "sku": "8991004",
+  "name": "Telur Ayam 1kg",
+  "price": 29000,
+  "category": "Food"
+ },
+ {
+  "sku": "8991005",
+  "name": "Beras Pandan Wangi 5kg",
+  "price": 74000,
+  "category": "Food"
+ },
+ {
+  "sku": "8991006",
+  "name": "Gula Pasir 1kg",
+  "price": 17500,
+  "category": "Food"
+ },
+ {
+  "sku": "8992001",
+  "name": "Aqua 600ml",
+  "price": 3500,
+  "category": "Drinks"
+ },
+ {
+  "sku": "8992002",
+  "name": "Teh Botol Sosro",
+  "price": 5000,
+  "category": "Drinks"
+ },
+ {
+  "sku": "8992003",
+  "name": "Kopi Kapal Api Sachet",
+  "price": 1500,
+  "category": "Drinks"
+ },
+ {
+  "sku": "8992004",
+  "name": "Susu UHT Coklat 250ml",
+  "price": 6500,
+  "category": "Drinks"
+ },
+ {
+  "sku": "8992005",
+  "name": "Pocari Sweat 500ml",
+  "price": 7500,
+  "category": "Drinks"
+ },
+ {
+  "sku": "8993001",
+  "name": "Sabun Mandi Lifebuoy",
+  "price": 4500,
+  "category": "Household"
+ },
+ {
+  "sku": "8993002",
+  "name": "Detergen Rinso 800g",
+  "price": 23500,
+  "category": "Household"
+ },
+ {
+  "sku": "8993003",
+  "name": "Tisu Paseo 250s",
+  "price": 14000,
+  "category": "Household"
+ },
+ {
+  "sku": "8993004",
+  "name": "Pasta Gigi Pepsodent",
+  "price": 12500,
+  "category": "Household"
+ },
+ {
+  "sku": "8994001",
+  "name": "Chitato Sapi Panggang",
+  "price": 11000,
+  "category": "Snacks"
+ },
+ {
+  "sku": "8994002",
+  "name": "Oreo Original",
+  "price": 9500,
+  "category": "Snacks"
+ },
+ {
+  "sku": "8994003",
+  "name": "Permen Kopiko (10)",
+  "price": 3000,
+  "category": "Snacks"
+ }
+]

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="760" viewBox="0 0 360 760" font-family="Roboto,Arial,sans-serif">
+<rect width="360" height="760" rx="24" fill="#FFFBFE" stroke="#999"/>
+<text x="16" y="52" font-size="22" fill="#1C1B1F">October envelopes</text>
+<rect x="16" y="72" width="328" height="76" rx="12" fill="#B2DFDB"/>
+<text x="32" y="104" font-size="20" fill="#00201C">$149 left of $810</text>
+<text x="32" y="130" font-size="13" fill="#00201C">5 days to go · safe to spend $32/day</text>
+<rect x="16" y="162" width="328" height="108" rx="12" fill="#F3EDF7"/>
+<text x="32" y="190" font-size="16" fill="#1C1B1F">Groceries</text>
+<text x="328" y="190" font-size="14" font-weight="bold" text-anchor="end" fill="#00695C">$48 left</text>
+<rect x="32" y="202" width="296" height="5" rx="2" fill="#E0E0E0"/><rect x="32" y="202" width="260" height="5" rx="2" fill="#00695C"/>
+<text x="32" y="228" font-size="12" fill="#49454F">$352 of $400</text>
+<rect x="32" y="238" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="60" y="255" font-size="12" text-anchor="middle" fill="#1C1B1F">+$5</text>
+<rect x="96" y="238" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="124" y="255" font-size="12" text-anchor="middle" fill="#1C1B1F">+$10</text>
+<rect x="160" y="238" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="188" y="255" font-size="12" text-anchor="middle" fill="#1C1B1F">+$25</text>
+<rect x="224" y="238" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="252" y="255" font-size="12" text-anchor="middle" fill="#1C1B1F">−$5</text>
+<rect x="16" y="280" width="328" height="108" rx="12" fill="#F3EDF7"/>
+<text x="32" y="308" font-size="16" fill="#1C1B1F">Transport</text>
+<text x="328" y="308" font-size="14" font-weight="bold" text-anchor="end" fill="#B3261E">over by $11</text>
+<rect x="32" y="320" width="296" height="5" rx="2" fill="#E0E0E0"/><rect x="32" y="320" width="296" height="5" rx="2" fill="#B3261E"/>
+<text x="32" y="346" font-size="12" fill="#49454F">$131 of $120</text>
+<rect x="32" y="356" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="60" y="373" font-size="12" text-anchor="middle" fill="#1C1B1F">+$5</text>
+<rect x="96" y="356" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="124" y="373" font-size="12" text-anchor="middle" fill="#1C1B1F">+$10</text>
+<rect x="160" y="356" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="188" y="373" font-size="12" text-anchor="middle" fill="#1C1B1F">+$25</text>
+<rect x="224" y="356" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="252" y="373" font-size="12" text-anchor="middle" fill="#1C1B1F">−$5</text>
+<rect x="16" y="398" width="328" height="108" rx="12" fill="#F3EDF7"/>
+<text x="32" y="426" font-size="16" fill="#1C1B1F">Eating out</text>
+<text x="328" y="426" font-size="14" font-weight="bold" text-anchor="end" fill="#00695C">$54 left</text>
+<rect x="32" y="438" width="296" height="5" rx="2" fill="#E0E0E0"/><rect x="32" y="438" width="189" height="5" rx="2" fill="#00695C"/>
+<text x="32" y="464" font-size="12" fill="#49454F">$96 of $150</text>
+<rect x="32" y="474" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="60" y="491" font-size="12" text-anchor="middle" fill="#1C1B1F">+$5</text>
+<rect x="96" y="474" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="124" y="491" font-size="12" text-anchor="middle" fill="#1C1B1F">+$10</text>
+<rect x="160" y="474" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="188" y="491" font-size="12" text-anchor="middle" fill="#1C1B1F">+$25</text>
+<rect x="224" y="474" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="252" y="491" font-size="12" text-anchor="middle" fill="#1C1B1F">−$5</text>
+<rect x="16" y="516" width="328" height="108" rx="12" fill="#F3EDF7"/>
+<text x="32" y="544" font-size="16" fill="#1C1B1F">Fun</text>
+<text x="328" y="544" font-size="14" font-weight="bold" text-anchor="end" fill="#00695C">$58 left</text>
+<rect x="32" y="556" width="296" height="5" rx="2" fill="#E0E0E0"/><rect x="32" y="556" width="81" height="5" rx="2" fill="#00695C"/>
+<text x="32" y="582" font-size="12" fill="#49454F">$22 of $80</text>
+<rect x="32" y="592" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="60" y="609" font-size="12" text-anchor="middle" fill="#1C1B1F">+$5</text>
+<rect x="96" y="592" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="124" y="609" font-size="12" text-anchor="middle" fill="#1C1B1F">+$10</text>
+<rect x="160" y="592" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="188" y="609" font-size="12" text-anchor="middle" fill="#1C1B1F">+$25</text>
+<rect x="224" y="592" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="252" y="609" font-size="12" text-anchor="middle" fill="#1C1B1F">−$5</text>
+<rect x="16" y="634" width="328" height="108" rx="12" fill="#F3EDF7"/>
+<text x="32" y="662" font-size="16" fill="#1C1B1F">Health</text>
+<text x="328" y="662" font-size="14" font-weight="bold" text-anchor="end" fill="#79747E">$0 left</text>
+<rect x="32" y="674" width="296" height="5" rx="2" fill="#E0E0E0"/><rect x="32" y="674" width="296" height="5" rx="2" fill="#79747E"/>
+<text x="32" y="700" font-size="12" fill="#49454F">$60 of $60</text>
+<rect x="32" y="710" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="60" y="727" font-size="12" text-anchor="middle" fill="#1C1B1F">+$5</text>
+<rect x="96" y="710" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="124" y="727" font-size="12" text-anchor="middle" fill="#1C1B1F">+$10</text>
+<rect x="160" y="710" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="188" y="727" font-size="12" text-anchor="middle" fill="#1C1B1F">+$25</text>
+<rect x="224" y="710" width="56" height="24" rx="8" fill="none" stroke="#79747E"/>
+<text x="252" y="727" font-size="12" text-anchor="middle" fill="#1C1B1F">−$5</text>
+<text x="180" y="750" font-size="10" text-anchor="middle" fill="#888">UI mockup — not a screenshot</text></svg>

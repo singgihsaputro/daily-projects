@@ -1,0 +1,11 @@
+{
+  "month": "October",
+  "daysLeft": 5,
+  "envelopes": [
+    {"id": "groceries", "name": "Groceries", "budget": 400, "spent": 352},
+    {"id": "transport", "name": "Transport", "budget": 120, "spent": 131},
+    {"id": "eating-out", "name": "Eating out", "budget": 150, "spent": 96},
+    {"id": "fun", "name": "Fun", "budget": 80, "spent": 22},
+    {"id": "health", "name": "Health", "budget": 60, "spent": 60}
+  ]
+}

@@ -31,3 +31,5 @@ On Linux, `swift test` fails to build the `PlantWatering` UI target (`no such mo
 - **The SwiftUI screen was written but not built or run.** This runner is Linux with no Xcode or simulator. `preview.svg` is a hand-drawn UI mockup. The `verify-ios` job on macOS is the first real compile of the UI.
 - **Verified here:** `PlantCore` built and all 6 unit tests passed on Linux, using a copy of the package without the UI target.
 - "Today" is fixed to 2026-10-28 so the fixture data stays meaningful. Watering is held in memory only; nothing is saved between launches.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

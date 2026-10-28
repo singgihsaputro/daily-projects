@@ -1,0 +1,10 @@
+{
+  "plants": [
+    { "id": "monstera", "name": "Monstera", "room": "Living room", "everyDays": 7, "lastWatered": "2026-10-21" },
+    { "id": "pothos", "name": "Pothos", "room": "Kitchen", "everyDays": 5, "lastWatered": "2026-10-22" },
+    { "id": "snake", "name": "Snake plant", "room": "Bedroom", "everyDays": 14, "lastWatered": "2026-10-14" },
+    { "id": "fern", "name": "Boston fern", "room": "Bathroom", "everyDays": 3, "lastWatered": "2026-10-27" },
+    { "id": "basil", "name": "Basil", "room": "Kitchen", "everyDays": 2, "lastWatered": "2026-10-28" },
+    { "id": "aloe", "name": "Aloe vera", "room": "Balcony", "everyDays": 21, "lastWatered": "2026-10-05" }
+  ]
+}

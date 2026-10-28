@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="780" viewBox="0 0 390 780" font-family="-apple-system, Helvetica, Arial, sans-serif">
+<rect width="390" height="780" fill="#f2f2f7"/>
+<text x="20" y="100" font-size="32" font-weight="700">Plant Watering</text>
+<rect x="16" y="120" width="358" height="56" rx="12" fill="#fff"/>
+<circle cx="42" cy="148" r="8" fill="#007aff"/>
+<text x="62" y="154" font-size="17" font-weight="600">4 of 6 need water</text>
+<text x="20" y="206" font-size="13" fill="#6c6c70">PLANTS</text>
+<rect x="16" y="216" width="358" height="384" rx="12" fill="#fff"/>
+<text x="32" y="244" font-size="17" font-weight="600">Aloe vera</text><text x="32" y="264" font-size="12" fill="#6c6c70">Balcony · every 21 days</text>
+<text x="250" y="253" font-size="13" fill="#d70015" text-anchor="end">2 days overdue</text><rect x="262" y="235" width="64" height="28" rx="14" fill="#007aff"/><text x="294" y="254" font-size="14" fill="#fff" text-anchor="middle">Water</text>
+<line x1="32" x2="374" y1="280" y2="280" stroke="#e5e5ea"/>
+<text x="32" y="308" font-size="17" font-weight="600">Pothos</text><text x="32" y="328" font-size="12" fill="#6c6c70">Kitchen · every 5 days</text>
+<text x="250" y="317" font-size="13" fill="#d70015" text-anchor="end">1 day overdue</text><rect x="262" y="299" width="64" height="28" rx="14" fill="#007aff"/><text x="294" y="318" font-size="14" fill="#fff" text-anchor="middle">Water</text>
+<line x1="32" x2="374" y1="344" y2="344" stroke="#e5e5ea"/>
+<text x="32" y="372" font-size="17" font-weight="600">Monstera</text><text x="32" y="392" font-size="12" fill="#6c6c70">Living room · every 7 days</text>
+<text x="250" y="381" font-size="13" fill="#c93400" text-anchor="end">Water today</text><rect x="262" y="363" width="64" height="28" rx="14" fill="#007aff"/><text x="294" y="382" font-size="14" fill="#fff" text-anchor="middle">Water</text>
+<line x1="32" x2="374" y1="408" y2="408" stroke="#e5e5ea"/>
+<text x="32" y="436" font-size="17" font-weight="600">Snake plant</text><text x="32" y="456" font-size="12" fill="#6c6c70">Bedroom · every 14 days</text>
+<text x="250" y="445" font-size="13" fill="#c93400" text-anchor="end">Water today</text><rect x="262" y="427" width="64" height="28" rx="14" fill="#007aff"/><text x="294" y="446" font-size="14" fill="#fff" text-anchor="middle">Water</text>
+<line x1="32" x2="374" y1="472" y2="472" stroke="#e5e5ea"/>
+<text x="32" y="500" font-size="17" font-weight="600">Basil</text><text x="32" y="520" font-size="12" fill="#6c6c70">Kitchen · every 2 days</text>
+<text x="358" y="509" font-size="13" fill="#6c6c70" text-anchor="end">In 2 days</text>
+<line x1="32" x2="374" y1="536" y2="536" stroke="#e5e5ea"/>
+<text x="32" y="564" font-size="17" font-weight="600">Boston fern</text><text x="32" y="584" font-size="12" fill="#6c6c70">Bathroom · every 3 days</text>
+<text x="358" y="573" font-size="13" fill="#6c6c70" text-anchor="end">In 2 days</text>
+</svg>

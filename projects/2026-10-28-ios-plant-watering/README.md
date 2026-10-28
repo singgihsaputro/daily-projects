@@ -33,3 +33,5 @@ On Linux, `swift test` fails to build the `PlantWatering` UI target (`no such mo
 - "Today" is fixed to 2026-10-28 so the fixture data stays meaningful. Watering is held in memory only; nothing is saved between launches.
 
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

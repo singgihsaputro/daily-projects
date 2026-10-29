@@ -1,0 +1,12 @@
+[
+  { "id": "jkt", "name": "Jakarta", "zone": "Asia/Jakarta", "workStart": 9, "workEnd": 17 },
+  { "id": "sgp", "name": "Singapore", "zone": "Asia/Singapore", "workStart": 9, "workEnd": 18 },
+  { "id": "syd", "name": "Sydney", "zone": "Australia/Sydney", "workStart": 9, "workEnd": 17 },
+  { "id": "tyo", "name": "Tokyo", "zone": "Asia/Tokyo", "workStart": 9, "workEnd": 18 },
+  { "id": "dxb", "name": "Dubai", "zone": "Asia/Dubai", "workStart": 8, "workEnd": 17 },
+  { "id": "ber", "name": "Berlin", "zone": "Europe/Berlin", "workStart": 9, "workEnd": 17 },
+  { "id": "lon", "name": "London", "zone": "Europe/London", "workStart": 9, "workEnd": 17 },
+  { "id": "nyc", "name": "New York", "zone": "America/New_York", "workStart": 9, "workEnd": 17 },
+  { "id": "sfo", "name": "San Francisco", "zone": "America/Los_Angeles", "workStart": 9, "workEnd": 17 },
+  { "id": "sao", "name": "São Paulo", "zone": "America/Sao_Paulo", "workStart": 9, "workEnd": 18 }
+]

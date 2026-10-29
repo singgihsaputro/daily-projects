@@ -1,0 +1,3 @@
+<template>
+  <MeetingPlanner />
+</template>

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "trip1",
+    "name": "Bali long weekend",
+    "days": 3,
+    "template": "beach",
+    "items": [
+      { "id": "i1", "name": "T-shirt", "category": "clothes", "qty": 3, "packed": true },
+      { "id": "i2", "name": "Swimsuit", "category": "clothes", "qty": 2, "packed": true },
+      { "id": "i3", "name": "Sunscreen", "category": "toiletries", "qty": 1, "packed": false },
+      { "id": "i4", "name": "Passport", "category": "documents", "qty": 1, "packed": false }
+    ]
+  }
+]

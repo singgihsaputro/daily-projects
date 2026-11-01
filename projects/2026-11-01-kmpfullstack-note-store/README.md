@@ -91,3 +91,5 @@ HTTP/1.1 204 No Content   then   HTTP/1.1 404 Not Found  { "message": "No note w
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
 
 - **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

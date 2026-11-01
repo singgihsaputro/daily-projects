@@ -1,0 +1,7 @@
+[
+  { "id": 1, "title": "Wi-Fi at the studio", "body": "Network: studio-guest. Password is on the fridge door, ask Dewi if it changed.", "pinned": true },
+  { "id": 2, "title": "Groceries", "body": "Tempeh, spinach, limes, rice noodles, coffee beans, dish soap.", "pinned": false },
+  { "id": 3, "title": "Book ideas", "body": "A field guide to bus routes. A cookbook for one burner. Short stories about lifts.", "pinned": false },
+  { "id": 4, "title": "Passport renewal", "body": "Appointment Thursday 09:30. Bring old passport, two photos, printed form.", "pinned": true },
+  { "id": 5, "title": "Gift list", "body": "Ibu: batik scarf. Rian: climbing chalk. Maya: a decent kettle.", "pinned": false }
+]

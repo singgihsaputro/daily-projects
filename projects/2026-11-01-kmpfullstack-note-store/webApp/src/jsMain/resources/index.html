@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Note store</title>
+    <style>
+        body { font-family: -apple-system, Segoe UI, Roboto, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; color: #1a1d33; background: #f6f7fc; }
+        h1 { margin-bottom: 4px; }
+        .hint { color: #777; font-size: 0.85rem; margin-bottom: 20px; }
+        input, textarea { padding: 8px; font-size: 1rem; border: 1px solid #c5cae9; border-radius: 6px; font-family: inherit; }
+        #search-input { width: 100%; box-sizing: border-box; margin-bottom: 12px; }
+        form { display: grid; grid-template-columns: 1fr auto; gap: 8px; margin-bottom: 8px; }
+        #title-input { grid-column: 1 / 3; }
+        button { padding: 6px 14px; font-size: 0.95rem; border: none; border-radius: 6px; background: #3949ab; color: white; cursor: pointer; }
+        button:hover { background: #283593; }
+        .error { color: #c62828; min-height: 1.2em; margin: 4px 0 8px; }
+        ul { list-style: none; padding: 0; display: grid; gap: 12px; }
+        .card { background: white; border: 1px solid #dfe2f3; border-radius: 12px; padding: 14px 16px; }
+        .card.pinned { border-color: #f9a825; background: #fffdf3; }
+        .title { font-weight: bold; font-size: 1.05rem; }
+        .preview { color: #555; margin: 4px 0 8px; }
+        .empty { color: #777; }
+        .actions { display: flex; gap: 8px; }
+        .link { background: transparent; color: #3949ab; padding: 2px 8px; }
+        .link:hover { background: #e8eaf6; }
+        .link.danger { color: #c62828; }
+        .link.danger:hover { background: #ffebee; }
+    </style>
+</head>
+<body>
+    <h1>Note store</h1>
+    <p class="hint">Talks to the real Ktor server at <code>http://localhost:8080</code> — start it with <code>./gradlew :server:run</code>. Pinned notes float to the top.</p>
+    <input type="search" id="search-input" placeholder="Search titles and bodies" />
+    <form id="create-form">
+        <input type="text" id="title-input" placeholder="New note title" />
+        <textarea id="body-input" rows="2" placeholder="Body"></textarea>
+        <button type="submit">Add note</button>
+    </form>
+    <div class="error" id="error"></div>
+    <ul id="note-list"></ul>
+    <script src="notestore-web.js"></script>
+</body>
+</html>

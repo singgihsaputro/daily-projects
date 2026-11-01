@@ -87,3 +87,5 @@ HTTP/1.1 204 No Content   then   HTTP/1.1 404 Not Found  { "message": "No note w
 - "Sync" means every client sees the same server data on refresh; there is no push between devices.
 - Persistence is in-memory: restarting the server resets to the seed file. No auth, no per-user data.
 - The API allows any origin (CORS `anyHost`) and Android allows cleartext HTTP, both for local dev only.
+
+- **iOS build: passing.** Compiled on macOS against the iOS 17 simulator SDK by the `verify-ios` job.

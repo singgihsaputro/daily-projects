@@ -1,0 +1,21 @@
+{
+  "month": "2026-11",
+  "employees": [
+    { "id": "e1", "name": "Sari Wulandari", "team": "Design", "annual": 12, "sick": 6 },
+    { "id": "e2", "name": "Budi Santoso", "team": "Design", "annual": 12, "sick": 6 },
+    { "id": "e3", "name": "Dewi Lestari", "team": "Engineering", "annual": 12, "sick": 6 },
+    { "id": "e4", "name": "Agus Pratama", "team": "Engineering", "annual": 12, "sick": 6 },
+    { "id": "e5", "name": "Maya Putri", "team": "Engineering", "annual": 12, "sick": 6 },
+    { "id": "e6", "name": "Rizki Hakim", "team": "Support", "annual": 12, "sick": 6 }
+  ],
+  "holidays": ["2026-11-25"],
+  "requests": [
+    { "id": "r1", "employeeId": "e1", "type": "annual", "from": "2026-11-09", "to": "2026-11-13", "reason": "Family trip", "status": "pending" },
+    { "id": "r2", "employeeId": "e2", "type": "annual", "from": "2026-11-11", "to": "2026-11-12", "reason": "Moving house", "status": "pending" },
+    { "id": "r3", "employeeId": "e3", "type": "annual", "from": "2026-11-16", "to": "2026-11-20", "reason": "Wedding", "status": "approved" },
+    { "id": "r4", "employeeId": "e4", "type": "annual", "from": "2026-11-18", "to": "2026-11-19", "reason": "Visa appointment", "status": "pending" },
+    { "id": "r5", "employeeId": "e5", "type": "sick", "from": "2026-11-04", "to": "2026-11-05", "reason": "Flu", "status": "approved" },
+    { "id": "r6", "employeeId": "e6", "type": "annual", "from": "2026-11-23", "to": "2026-12-04", "reason": "Long holiday", "status": "pending" },
+    { "id": "r7", "employeeId": "e2", "type": "sick", "from": "2026-11-02", "to": "2026-11-02", "reason": "Dentist", "status": "rejected" }
+  ]
+}

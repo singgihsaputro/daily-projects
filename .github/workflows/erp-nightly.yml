@@ -1,0 +1,206 @@
+name: Nightly ERP feature
+
+# One ERP, one more feature every night. The agent builds the next line of the
+# ERP repository's ROADMAP.md; this workflow checks the work and publishes it.
+# The rotating mini projects (nightly.yml) are paused in favour of this.
+
+on:
+  schedule:
+    # GitHub's scheduler is best-effort and runs this repository hours late, so
+    # there are two backups. Each fire works out the same "night" (below) and
+    # stops if that night already has its feature, so extra fires are no-ops —
+    # and a night whose first attempt failed gets retried.
+    - cron: '0 16 * * *'  # 23:00 Asia/Jakarta — the intended one
+    - cron: '5 18 * * *'  # 01:05 — backup
+    - cron: '5 21 * * *'  # 04:05 — last resort
+  workflow_dispatch:
+    inputs:
+      extra:
+        description: Deliver another feature even if tonight's is already done
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: erp-nightly
+  cancel-in-progress: false
+
+env:
+  ERP_REPO: erp
+  ERP_DESCRIPTION: ERP for Indonesian retail and distribution SMEs, one feature a night
+
+jobs:
+  feature:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      # Nothing is pushed back here, so the checkout keeps no token for the agent
+      # to find.
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check out the ERP repository, creating it on the first night
+        env:
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+        run: |
+          set -euo pipefail
+          token=$(printf '%s' "$PUBLISH_TOKEN" | tr -d '[:space:]')
+          if [ -z "$token" ]; then
+            echo "::error::PUBLISH_TOKEN is not set. The ERP lives in its own repository, so the workflow needs it."
+            exit 1
+          fi
+          export GH_TOKEN="$token"
+
+          owner=$(gh api user --jq .login)
+          repo="$owner/$ERP_REPO"
+          if ! gh repo view "$repo" >/dev/null 2>&1; then
+            gh repo create "$repo" --public --description "$ERP_DESCRIPTION"
+            echo "Created https://github.com/$repo"
+          fi
+
+          # The token goes in a one-off header, not the clone's config, so the
+          # agent working in that clone cannot read it.
+          dir="$RUNNER_TEMP/erp"
+          auth=$(printf 'x-access-token:%s' "$token" | base64 -w0)
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth" \
+            clone -q "https://github.com/$repo.git" "$dir"
+          git -C "$dir" config user.name  "Singgih Rochmad Saputro"
+          git -C "$dir" config user.email "singgih.rochmad@gmail.com"
+          git -C "$dir" rev-parse -q --verify HEAD >/dev/null \
+            || git -C "$dir" symbolic-ref HEAD refs/heads/main   # empty repository
+
+          if [ ! -f "$dir/ROADMAP.md" ]; then
+            cp -R erp-seed/. "$dir/"
+            git -C "$dir" add -A
+            git -C "$dir" commit -q -m "Seed the roadmap and the conventions" \
+              -m "The nightly agent builds one ROADMAP.md line a night, following CLAUDE.md."
+          fi
+
+          {
+            echo "ERP_DIR=$dir"
+            echo "ERP_SLUG=$repo"
+            echo "BASE=$(git -C "$dir" rev-parse HEAD)"
+          } >> "$GITHUB_ENV"
+
+      # A night runs from 19:00 to 19:00 WIB (12:00 UTC), named by the day it
+      # starts. The 23:00 fire and both backups land in the same night however
+      # late GitHub starts them, so a night never gets two features by accident.
+      - name: Has tonight's feature already shipped?
+        env:
+          EXTRA: ${{ inputs.extra }}
+        run: |
+          night=$(date -u -d '12 hours ago' +%F)
+          echo "NIGHT=$night" >> "$GITHUB_ENV"
+          if [ "$EXTRA" != "true" ] && git -C "$ERP_DIR" log --format=%s | grep -q "^Night $night:"; then
+            echo "Night $night already has its feature — nothing to do."
+            echo "SKIP=1" >> "$GITHUB_ENV"
+          else
+            echo "Building the feature for night $night."
+          fi
+
+      - name: Install Claude Code
+        if: env.SKIP != '1'
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Build tonight's feature
+        if: env.SKIP != '1'
+        working-directory: ${{ env.ERP_DIR }}
+        env:
+          # Set whichever you have. A subscription token comes from
+          # `claude setup-token`; an API key bills per run instead.
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -o pipefail
+
+          # Copy-paste wraps long tokens; a line break in the header is rejected.
+          CLAUDE_CODE_OAUTH_TOKEN=$(printf '%s' "$CLAUDE_CODE_OAUTH_TOKEN" | tr -d '[:space:]')
+          ANTHROPIC_API_KEY=$(printf '%s' "$ANTHROPIC_API_KEY" | tr -d '[:space:]')
+          export CLAUDE_CODE_OAUTH_TOKEN ANTHROPIC_API_KEY
+          [ -n "$ANTHROPIC_API_KEY" ] || unset ANTHROPIC_API_KEY
+
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ] && [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+            echo "::error::Set CLAUDE_CODE_OAUTH_TOKEN (or ANTHROPIC_API_KEY) in repository secrets."
+            exit 1
+          fi
+
+          claude -p "$(cat "$GITHUB_WORKSPACE/.github/erp-prompt.md")" \
+            --allowed-tools Bash Read Write Edit Glob Grep \
+            --output-format text \
+            | tee "$RUNNER_TEMP/agent-report.txt"
+
+          # Claude exits 0 on an auth rejection, so the status alone is not enough.
+          if grep -qiE "invalid auth token|invalid authorization header|authentication_error" "$RUNNER_TEMP/agent-report.txt"; then
+            echo "::error::Claude could not authenticate — check the CLAUDE_CODE_OAUTH_TOKEN secret."
+            exit 1
+          fi
+
+      # Checked, not trusted: a clean install has to pass verify, a roadmap line
+      # has to be ticked, and no placeholder code may ship. Fail here and nothing
+      # is pushed; the next fire tonight tries again from a fresh clone.
+      - name: Check the work
+        if: env.SKIP != '1'
+        working-directory: ${{ env.ERP_DIR }}
+        run: |
+          set -euo pipefail
+          if [ ! -f package.json ] || [ ! -f package-lock.json ]; then
+            echo "::error::package.json and package-lock.json must both be committed."
+            exit 1
+          fi
+          npm ci
+          npm run verify
+
+          # The agent is told not to commit; if it did anyway, fold its commits
+          # back in so the night still lands as one commit with the usual message.
+          git reset -q --soft "$BASE"
+
+          feature=$(git diff -U0 HEAD -- ROADMAP.md \
+            | awk -F ' — ' '/^\+- \[x\] F[0-9]+ /{ sub(/^\+- \[x\] /, "", $1); print $1 }' \
+            | paste -sd ';' | sed 's/;/ + /g' | tr -d '\r\n')
+          if [ -z "$feature" ]; then
+            echo "::error::No ROADMAP.md line was ticked, so nothing counts as delivered."
+            exit 1
+          fi
+          echo "FEATURE=$feature" >> "$GITHUB_ENV"
+
+          git add -A
+          # Code only: the docs legitimately name the banned markers.
+          changed=$(git diff --cached --name-only --diff-filter=AM -- . ':!package-lock.json' ':!*.md')
+          placeholders=$(printf '%s\n' "$changed" | xargs -r -d '\n' grep -IlE 'TODO|FIXME|lorem ipsum' 2>/dev/null || true)
+          if [ -n "$placeholders" ]; then
+            echo "::error::Placeholder markers found in: $(echo "$placeholders" | tr '\n' ' ')"
+            exit 1
+          fi
+          echo "Delivered: $feature"
+
+      - name: Publish the night
+        if: env.SKIP != '1'
+        working-directory: ${{ env.ERP_DIR }}
+        env:
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+        run: |
+          set -euo pipefail
+          git add -A
+          git commit -q -m "Night $NIGHT: $FEATURE" \
+            -m "Delivered by the nightly ERP agent. CHANGELOG.md says what changed and how to try it."
+          token=$(printf '%s' "$PUBLISH_TOKEN" | tr -d '[:space:]')
+          auth=$(printf 'x-access-token:%s' "$token" | base64 -w0)
+          git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth" \
+            push -q origin HEAD:main
+          echo "Published https://github.com/$ERP_SLUG/commit/$(git rev-parse HEAD)"
+
+      - name: Night report
+        if: always() && env.SKIP != '1'
+        run: |
+          {
+            echo "## Night ${NIGHT:-?}: ${FEATURE:-not delivered}"
+            echo
+            if [ -f "$RUNNER_TEMP/agent-report.txt" ]; then cat "$RUNNER_TEMP/agent-report.txt"; fi
+          } >> "$GITHUB_STEP_SUMMARY"

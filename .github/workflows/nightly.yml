@@ -1,14 +1,11 @@
 name: Nightly mini project
 
 on:
-  schedule:
-    # GitHub's scheduler is best-effort: runs on the hour are heavily contended
-    # and get delayed or dropped outright. So: an off-peak minute, plus two
-    # backup fires. The agent stops immediately if today's slot is already
-    # filled, which makes every extra fire a no-op.
-    - cron: '0 16 * * *'  # 23:00 Asia/Jakarta — the intended one
-    - cron: '5 18 * * *'  # 01:05 — backup if the first was dropped
-    - cron: '5 21 * * *'  # 04:05 — last resort
+  # Paused: no more rotating mini projects while the nightly job moves to one ERP.
+  #   schedule:
+  #     - cron: '0 16 * * *'  # 23:00 Asia/Jakarta — the intended one
+  #     - cron: '5 18 * * *'  # 01:05 — backup if the first was dropped
+  #     - cron: '5 21 * * *'  # 04:05 — last resort
   workflow_dispatch: # run it by hand from the Actions tab
 
 permissions:

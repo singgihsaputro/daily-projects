@@ -5,9 +5,18 @@ A scheduled cloud agent that builds software every night at 23:00 WIB.
 **Now: one ERP, one feature a night.** The agent is building an ERP for
 Indonesian retail and distribution SMEs in its own repository,
 [`singgihsaputro/erp`](https://github.com/singgihsaputro/erp). Each night it
-takes the next line of that repository's `ROADMAP.md`, builds it with tests and
-a screen, and the workflow publishes it only if a clean install passes
-typecheck, tests and build.
+takes the next line of that repository's `ROADMAP.md` and works it the way a
+team would:
+
+1. the workflow opens an **issue** for the feature and a branch `night/<date>-<id>`;
+2. the agent builds it there, with tests, a screen, seed data and a screenshot;
+3. the workflow checks a clean `npm ci && npm run verify`, then opens a **pull
+   request** that closes the issue;
+4. the ERP's own CI runs on the pull request, and only when it passes is the pull
+   request squash-merged as `Night <date>: <feature> (#<pr>)`.
+
+A night whose CI fails leaves its pull request open, and the next fire that night
+retries on the same issue and pull request.
 
 - **The workflow:** [`.github/workflows/erp-nightly.yml`](.github/workflows/erp-nightly.yml)
 - **What the agent is told each night:** [`.github/erp-prompt.md`](.github/erp-prompt.md)
@@ -41,4 +50,4 @@ Secrets (Settings → Secrets and variables → Actions):
 |---|---|---|
 | `CLAUDE_CODE_OAUTH_TOKEN` | one of these two | Subscription token from `claude setup-token`. No per-run billing. |
 | `ANTHROPIC_API_KEY` | one of these two | API key instead. Bills per run. |
-| `PUBLISH_TOKEN` | **yes** | PAT with `repo` scope. Creates the ERP repository on the first night and pushes each night's feature to it. It is never given to the agent. |
+| `PUBLISH_TOKEN` | **yes** | PAT with `repo` scope. Opens the issue and pull request, pushes the branch and merges, all as you. It is never given to the agent. |

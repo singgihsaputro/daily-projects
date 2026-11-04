@@ -5,8 +5,12 @@ Deliver tonight's ERP feature. The current directory is the ERP repository.
    existing modules are built, so tonight's work matches them.
 
 2. Tonight's night date is in the `NIGHT` environment variable (`echo "$NIGHT"`).
+   Tonight's feature is `$FEATURE_ID` (`$FEATURE_TITLE`), the first unchecked line
+   of `ROADMAP.md`; the workflow has opened GitHub issue `#$ISSUE` for it and
+   checked out the branch you are on. The work becomes a pull request that closes
+   that issue.
 
-3. Take the **first unchecked line** in `ROADMAP.md` and deliver it completely:
+3. Deliver **that line, and only that line**, completely:
    migration, shared schemas, API endpoints with validation, tests, the screen,
    seed data, and a screenshot. If the repository is empty apart from the docs,
    tonight also builds the skeleton described in `CLAUDE.md` — the root scripts
@@ -18,9 +22,8 @@ Deliver tonight's ERP feature. The current directory is the ERP repository.
      it, keep the line's ID for that slice, and add a new unchecked line right
      after it for the remainder. A finished smaller feature beats a half-built
      large one.
-   - At least one feature a night. Take the next line too only if the first is
-     completely done and verified and the second is small; never leave a second
-     feature half-built.
+   - One feature per pull request. Do not start the next line; a second feature
+     tonight gets its own issue and pull request from a separate run.
 
 4. Run `npm run verify` and make it pass. Then start the app with the seed data
    and exercise tonight's feature end to end through the API (curl) and the

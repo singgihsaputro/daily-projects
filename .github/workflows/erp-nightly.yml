@@ -1,8 +1,9 @@
 name: Nightly ERP feature
 
-# One ERP, one more feature every night. The agent builds the next line of the
-# ERP repository's ROADMAP.md; this workflow checks the work and publishes it.
-# The rotating mini projects (nightly.yml) are paused in favour of this.
+# One ERP, one more feature every night, worked the way a team would: an issue
+# for the next ROADMAP.md line, the agent builds it on a branch, a pull request
+# that closes the issue, the ERP's own CI on that pull request, then a squash
+# merge. The rotating mini projects (nightly.yml) are paused in favour of this.
 
 on:
   schedule:
@@ -34,7 +35,7 @@ env:
 jobs:
   feature:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 90
     steps:
       # Nothing is pushed back here, so the checkout keeps no token for the agent
       # to find.
@@ -105,6 +106,59 @@ jobs:
             echo "Building the feature for night $night."
           fi
 
+      # The workflow, not the agent, picks the feature, so the issue exists before
+      # any work starts. A retry tonight reuses the issue opened by the first try.
+      - name: Open tonight's issue and branch
+        if: env.SKIP != '1'
+        working-directory: ${{ env.ERP_DIR }}
+        env:
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+        run: |
+          set -euo pipefail
+          GH_TOKEN=$(printf '%s' "$PUBLISH_TOKEN" | tr -d '[:space:]'); export GH_TOKEN
+          line=$(grep -m1 -E '^- \[ \] F[0-9]+ ' ROADMAP.md || true)
+          if [ -z "$line" ]; then
+            echo "::error::Every ROADMAP.md line is ticked. Add the next features to the roadmap and run again."
+            exit 1
+          fi
+          id=$(printf '%s' "$line" | awk '{ print $4 }')
+          title=$(printf '%s' "$line" | awk -F ' — ' '{ sub(/^- \[ \] F[0-9]+ /, "", $1); print $1 }')
+          summary=$(printf '%s' "$line" | awk -F ' — ' '{ $1 = ""; sub(/^ — /, ""); print }' OFS=' — ')
+
+          gh label create feature -R "$ERP_SLUG" --color 0E8A16 --description "A ROADMAP.md feature" --force >/dev/null
+          issue=$(gh issue list -R "$ERP_SLUG" --state open --label feature --limit 100 --json number,title \
+            --jq "[.[] | select(.title | startswith(\"$id \"))][0].number // empty")
+          if [ -z "$issue" ]; then
+            cat > "$RUNNER_TEMP/issue.md" <<EOF
+          **$id $title** — $summary
+
+          The next line of [ROADMAP.md](https://github.com/$ERP_SLUG/blob/main/ROADMAP.md), picked up for the night of $NIGHT.
+
+          Done when, as [CLAUDE.md](https://github.com/$ERP_SLUG/blob/main/CLAUDE.md) asks of every feature:
+          - API endpoints validated with zod, with sensible status codes
+          - API tests for the happy path, the validation errors and the business rule that matters most
+          - A screen reachable from the sidebar, with loading, empty and error states
+          - Demo data in the seed
+          - A screenshot in docs/screenshots/
+          - ROADMAP.md ticked, a CHANGELOG.md entry, the README modules list current
+          - CI (typecheck, tests, build) green on the pull request
+          EOF
+            url=$(gh issue create -R "$ERP_SLUG" --title "$id $title" --label feature --body-file "$RUNNER_TEMP/issue.md")
+            issue=${url##*/}
+            echo "Opened $url"
+          else
+            echo "Reusing issue #$issue from an earlier attempt tonight."
+          fi
+
+          branch="night/$NIGHT-$(printf '%s' "$id" | tr '[:upper:]' '[:lower:]')"
+          git checkout -q -B "$branch"
+          {
+            echo "FEATURE_ID=$id"
+            echo "FEATURE_TITLE=$title"
+            echo "ISSUE=$issue"
+            echo "BRANCH=$branch"
+          } >> "$GITHUB_ENV"
+
       - name: Install Claude Code
         if: env.SKIP != '1'
         run: npm install -g @anthropic-ai/claude-code
@@ -168,6 +222,10 @@ jobs:
             echo "::error::No ROADMAP.md line was ticked, so nothing counts as delivered."
             exit 1
           fi
+          case "$feature" in
+            "$FEATURE_ID "*) ;;
+            *) echo "::error::Tonight's feature is $FEATURE_ID (issue #$ISSUE), but the ticked line is: $feature"; exit 1 ;;
+          esac
           echo "FEATURE=$feature" >> "$GITHUB_ENV"
 
           git add -A
@@ -180,27 +238,93 @@ jobs:
           fi
           echo "Delivered: $feature"
 
-      - name: Publish the night
+      - name: Open the pull request
         if: env.SKIP != '1'
         working-directory: ${{ env.ERP_DIR }}
         env:
           PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         run: |
           set -euo pipefail
-          git add -A
-          git commit -q -m "Night $NIGHT: $FEATURE" \
-            -m "Delivered by the nightly ERP agent. CHANGELOG.md says what changed and how to try it."
           token=$(printf '%s' "$PUBLISH_TOKEN" | tr -d '[:space:]')
+          export GH_TOKEN="$token"
+          git add -A
+          git commit -q -m "$FEATURE" -m "Closes #$ISSUE. Delivered by the nightly ERP agent; CHANGELOG.md says how to try it."
           auth=$(printf 'x-access-token:%s' "$token" | base64 -w0)
+          # Forced: a failed attempt earlier tonight may have left this branch behind.
           git -c "http.https://github.com/.extraheader=AUTHORIZATION: basic $auth" \
-            push -q origin HEAD:main
-          echo "Published https://github.com/$ERP_SLUG/commit/$(git rev-parse HEAD)"
+            push -q -f origin "HEAD:refs/heads/$BRANCH"
+
+          {
+            echo "Closes #$ISSUE."
+            echo
+            # the CHANGELOG entry the agent wrote tonight: what a user can now do and how to try it
+            git diff "$BASE" -- CHANGELOG.md | sed -n 's/^+//p' | { grep -v '^++' || true; } | sed -n '/^## /,$p'
+            shot=$(git diff --name-only --diff-filter=A "$BASE" -- docs/screenshots | head -1)
+            if [ -n "$shot" ]; then
+              echo
+              # by commit, so the picture survives the branch being deleted on merge
+              echo "![$FEATURE](https://github.com/$ERP_SLUG/blob/$(git rev-parse HEAD)/$shot?raw=true)"
+            fi
+            echo
+            echo "---"
+            echo "Built by the nightly ERP agent for the night of $NIGHT. The workflow checked a clean \`npm ci && npm run verify\` before opening this; CI runs it again here."
+          } > "$RUNNER_TEMP/pr.md"
+
+          pr=$(gh pr list -R "$ERP_SLUG" --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
+          if [ -z "$pr" ]; then
+            url=$(gh pr create -R "$ERP_SLUG" --base main --head "$BRANCH" --title "$FEATURE" --label feature --body-file "$RUNNER_TEMP/pr.md")
+            pr=${url##*/}
+          else
+            gh pr edit "$pr" -R "$ERP_SLUG" --title "$FEATURE" --body-file "$RUNNER_TEMP/pr.md" >/dev/null
+          fi
+          echo "PR=$pr" >> "$GITHUB_ENV"
+          echo "Pull request: https://github.com/$ERP_SLUG/pull/$pr"
+
+      # Merge only on the ERP's own CI. The subject keeps the "Night <date>:" form
+      # the first step looks for, so tonight's later fires know it is done.
+      - name: Wait for CI, then merge
+        if: env.SKIP != '1'
+        working-directory: ${{ runner.temp }}
+        env:
+          PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
+        run: |
+          set -euo pipefail
+          GH_TOKEN=$(printf '%s' "$PUBLISH_TOKEN" | tr -d '[:space:]'); export GH_TOKEN
+          n=0
+          for _ in $(seq 1 30); do
+            n=$(gh pr checks "$PR" -R "$ERP_SLUG" --json name --jq 'length' 2>/dev/null || echo 0)
+            [ "$n" -gt 0 ] && break
+            sleep 10
+          done
+          if [ "$n" -eq 0 ]; then
+            echo "::error::No CI check appeared on https://github.com/$ERP_SLUG/pull/$PR within five minutes."
+            exit 1
+          fi
+          if ! gh pr checks "$PR" -R "$ERP_SLUG" --watch --fail-fast --interval 20; then
+            echo "::error::CI failed on https://github.com/$ERP_SLUG/pull/$PR — left open; the next fire tonight retries."
+            exit 1
+          fi
+          # GitHub can take a moment to call a just-checked pull request mergeable.
+          for attempt in 1 2 3 4; do
+            if gh pr merge "$PR" -R "$ERP_SLUG" --squash --delete-branch \
+                --subject "Night $NIGHT: $FEATURE (#$PR)" \
+                --body "Closes #$ISSUE. Delivered by the nightly ERP agent; CHANGELOG.md says how to try it."; then
+              echo "Merged https://github.com/$ERP_SLUG/pull/$PR, closing #$ISSUE"
+              exit 0
+            fi
+            sleep $((attempt * 10))
+          done
+          echo "::error::Could not merge https://github.com/$ERP_SLUG/pull/$PR"
+          exit 1
 
       - name: Night report
         if: always() && env.SKIP != '1'
         run: |
           {
             echo "## Night ${NIGHT:-?}: ${FEATURE:-not delivered}"
+            echo
+            [ -n "${ISSUE:-}" ] && echo "Issue: https://github.com/$ERP_SLUG/issues/$ISSUE"
+            [ -n "${PR:-}" ] && echo "Pull request: https://github.com/$ERP_SLUG/pull/$PR"
             echo
             if [ -f "$RUNNER_TEMP/agent-report.txt" ]; then cat "$RUNNER_TEMP/agent-report.txt"; fi
           } >> "$GITHUB_STEP_SUMMARY"

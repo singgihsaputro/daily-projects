@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="640" viewBox="0 0 360 640" font-family="Roboto, Arial, sans-serif">
+  <rect width="360" height="640" fill="#fdfbff"/>
+  <rect width="360" height="64" fill="#fdfbff"/>
+  <text x="20" y="40" font-size="22" fill="#1b1b1f">Geography basics</text>
+  <rect x="20" y="84" width="320" height="4" rx="2" fill="#dfe0f0"/>
+  <rect x="20" y="84" width="120" height="4" rx="2" fill="#3949ab"/>
+  <text x="20" y="112" font-size="13" fill="#46464f">3 of 8 learned · 5 left</text>
+  <rect x="20" y="136" width="320" height="260" rx="12" fill="#e0e0ff"/>
+  <text x="180" y="240" font-size="12" fill="#46464f" text-anchor="middle">ANSWER</text>
+  <text x="180" y="284" font-size="26" fill="#1b1b1f" text-anchor="middle">Canberra</text>
+  <rect x="20" y="420" width="154" height="44" rx="22" fill="none" stroke="#777680"/>
+  <text x="97" y="448" font-size="14" fill="#3949ab" text-anchor="middle">Again</text>
+  <rect x="186" y="420" width="154" height="44" rx="22" fill="#3949ab"/>
+  <text x="263" y="448" font-size="14" fill="#fff" text-anchor="middle">Got it</text>
+  <text x="180" y="620" font-size="11" fill="#777680" text-anchor="middle">UI mockup — not a screenshot</text>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "deck": "Geography basics",
+  "cards": [
+    {"id": "c1", "front": "Capital of Australia?", "back": "Canberra"},
+    {"id": "c2", "front": "Longest river in Africa?", "back": "The Nile"},
+    {"id": "c3", "front": "Smallest country in the world?", "back": "Vatican City"},
+    {"id": "c4", "front": "Which ocean is the largest?", "back": "The Pacific"},
+    {"id": "c5", "front": "Capital of Canada?", "back": "Ottawa"},
+    {"id": "c6", "front": "Highest mountain above sea level?", "back": "Mount Everest"},
+    {"id": "c7", "front": "Largest desert that is not polar?", "back": "The Sahara"},
+    {"id": "c8", "front": "Country with the most islands?", "back": "Sweden"}
+  ]
+}
